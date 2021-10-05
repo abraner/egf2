@@ -1,0 +1,505 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+}
+
+/* Global */
+.container{
+    float:left;
+    margin-left:200px;
+  width:100%;
+}
+/* Header **/
+header{
+  width:1920px;
+    height:160px;
+  background:#35424a;
+  color:#ffffff;
+  padding-top:0px;
+  min-height:100px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header #branding{
+    width:auto;
+  float:left;
+  margin-top: 25px;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+label{
+
+    margin:auto;
+    color:#e8491d;
+    font-family: "Arial";
+    font-weight:bold;
+    text-align:right;
+}
+
+
+div#menu{
+    float:left;
+    width:1600px;
+    margin-top:25px;
+    margin-bottom: 10px;
+    display:inline;
+}
+
+a.btn.btn10{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: #000000;
+    font-family: "Arial";
+    font-weight:bold;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.6s;
+    padding:5px;
+}
+
+a.btn.btn10:hover{
+    background:#e8491d;
+    display:block;
+}
+
+a.test{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: #000000;
+    font-family: "Arial";
+
+}
+
+.dropdown-menu>li>a{
+    background: #C0C0C0;
+    font-weight:bold;
+    transition: 0.6s;
+}
+
+
+
+.dropdown-menu>li>a:hover{
+    background:#e8491d;
+    display:block;
+}
+
+
+
+ul.dropdown-menu{
+    background:#35424a;
+    margin-bottom:25px;
+    border:#e8491d 2px solid;
+
+
+}
+
+div.dropdown{
+    width:167px;
+    height:20px;
+    display:inline;
+
+
+}
+
+.dropdown-submenu {
+  position: relative;
+
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+
+}
+
+li{
+    list-style: none;
+    padding:3px;
+    text-align:center;
+
+}
+
+p{
+margin:0;
+height:auto;
+}
+
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+.btn1{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:3px;
+    transition: 0.6s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn2{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:3px;
+    transition: 0.6s;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.btn1, .btn2{
+    color: #000000;
+}
+
+.btn1:hover, .btn2:hover, .dropbtn1:hover{
+    color: #35424a;
+    background: #e8491d;
+}
+
+
+/* Dropdown Button */
+.dropbtn{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+    font-family: "Arial";
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.6s;
+    position: relative;
+    overflow: hidden;
+}
+.dropbtn1{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+    font-family: "Arial";
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.6s;
+
+    overflow: hidden;
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+      width:167px;
+    height:20px;
+  display: inline-block;
+
+}
+.dropdown2 {
+  position: right;
+  display: inline-block;
+
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 160px;
+  margin-top:0px;
+}
+
+.dropdown1-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 160px;
+  margin-top:0px;
+}
+
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+
+/* Links inside the dropdown */
+.dropdown1-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background: #C0C0C0;
+  width: 149px;
+  height: 30px;
+  border-radius: 3px;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight:bold;
+  padding-top:5px;
+  padding-left:8px;
+  border: 2px solid #C0C0C0;
+
+}
+
+.dropdown1-content1 a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background: #C0C0C0;
+  width: 149px;
+  height: 30px;
+  border-radius: 3px;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight:bold;
+  padding-top:5px;
+  padding-left:8px;
+  border: 2px solid #C0C0C0;
+
+}
+
+.dropdown2-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background: #C0C0C0;
+  width: 152px;
+  height: 30px;
+  border-radius: 3px;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight:bold;
+  padding-top:5px;
+  border: 2px solid #C0C0C0;
+}
+/* Change color of dropdown links on hover */
+.dropdown1-content a:hover {
+    background-color: #e8491d;
+    transition: 0.6s;
+    }
+.dropdown1-content1 a:hover {
+    background-color: #e8491d;
+    transition: 0.6s;
+    }
+
+.dropdown2-content a:hover {
+    background-color: #e8491d;
+    transition: 0.6s;
+    }
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown1-content {
+    display: block;
+    border:#e8491d 2px solid;
+    border-radius: 4px;
+    background:#35424a;
+
+    }
+.dropdown2:hover .dropdown2-content {
+    display: block;
+    border:#e8491d 2px solid;
+    border-radius: 4px;
+    background:#35424a;
+
+    }
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown1:hover .dropbtn {
+    background-color: #e8491d;
+
+    }
+.dropdown1:hover .dropbtn {
+    background-color: #e8491d;
+
+    }
+
+.submenu{
+    position: absolute;
+    margin-left: 220px;
+    display:none;
+}
+.submenu2{
+    position: absolute;
+    margin-left: 155px;
+    margin-top:-35px;
+    border:#e8491d 2px solid;
+    border-radius: 4px;
+    background:#35424a;
+    height:77px;
+    width:162px;
+    display:none;
+}
+
+.submenu2 il a{
+    height:30px;
+    margin-top:3px;
+    margin-right:5px;
+    margin-left:-37px;
+    margin-bottom:6px;
+}
+.dropdown1-content li:hover .submenu2{
+    display:block;
+}
+
+.dropdown1-content1 li:hover .submenu2{
+    display:block;
+}
+
+
+/* Media Queries */
+
+ @media(min-width: 768px) and (max-width: 768px){
+        .container{
+        width:100%;
+         margin-left:0px;
+    }
+        header{
+        min-height:160px;
+        width:768px;
+    }
+    #branding{
+        text-align:center;
+        margin-left:140px;
+    }
+    div#menu{
+        width:170px;
+    }
+    nav{
+        width:170px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    header{
+        border-bottom:#e8491d 3px solid;
+    }
+    ul.dropdown-menu{
+        background:#35424a;
+        margin-bottom:25px;
+        border:#e8491d 2px solid;
+    }
+    div.dropdown{
+         margin-left:5px;
+         margin-right:0px;
+    }
+    .btn1{
+        margin-left: 10px;
+    }
+  }
+
+ @media(min-width: 1024px) and (max-width: 1024px){
+    .container{
+        width:100%;
+         margin-left:0px;
+    }
+    header{
+        min-height:160px;
+        width:1280px;
+    }
+    .btn1, .btn2{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        color: #000000;
+        font-family: "Arial";
+        font-weight:bold;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding:0px;
+}
+}
+@media(min-width: 1280px) and (max-width: 1280px){
+
+    .container{
+        width:100%;
+         margin-left:45px;
+
+    }
+    header{
+        min-height:160px;
+        width:1280px;
+
+    }
+    .btn1, .btn2{
+        width: 115px;
+        height: 30px;
+        font-size: 12px;
+        color: #000000;
+        font-family: "Arial";
+        font-weight:bold;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding:0px;
+}
+}
+ @media(min-width: 1440px) and (max-width: 1440px){
+     .container{
+        width:90%;
+        margin-left:120px;
+     }
+
+     header{
+        min-height:160px;
+        width:1440px;
+     }
+     .btn1, .btn2{
+        width: 114px;
+        height: 30px;
+        font-size: 11px;
+        color: #000000;
+        font-family: "Arial";
+        font-weight:bold;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding:0px;
+      }
+ }
