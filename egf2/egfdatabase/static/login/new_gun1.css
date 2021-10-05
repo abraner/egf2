@@ -1,0 +1,462 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+/* Work Area */
+
+h1#formh2{
+    text-align:center;
+    margin-top:40px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh3{
+    text-align:center;
+    margin-bottom:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+#col1.fieldWrapper{
+    height:100px;
+    width:1150px;
+    margin-left:333px;
+    margin-top:70px;
+
+}
+
+
+
+section#workarea1{
+    width: 1903px;
+    height:450px;
+    display:inline-block;
+}
+
+span.phone-field-ext{
+    display:none;
+}
+
+div#cust_id{
+    width:100px;
+    height:100px;
+    margin-left:33px;
+}
+
+input#id_id {
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_id[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+#label_id{
+    width:100px;
+    text-align:center;
+    color:#e8491d;
+    padding-bottom:10px;
+}
+
+div#id{
+    width:100px;
+    height:100px;
+    margin-left:32px;
+    margin-top:-100px;
+}
+
+input#id_gunid{
+    width:50px;
+    text-align:center;
+    margin-left:184px;
+    background-color: #a9a9a9;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+label#label_gunid{
+    margin-left:159px;
+    padding-bottom:10px;
+}
+
+div#gunid{
+    width:100px;
+    height:100px;
+    margin-left:-46px;
+    margin-top:-100px;
+}
+
+#label_gunid{
+    width:100px;
+    text-align:center;
+    color:#e8491d;
+    padding-bottom:10px;
+}
+
+div#gunman{
+    width:200px;
+    height:100px;
+    margin-left:222px;
+    margin-top:-100px;
+}
+
+label#label_gunmanufacturer{
+    margin-left:20px;
+    padding-bottom:10px;
+}
+
+
+input#id_gunmanufacturer {
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#gunmodel{
+    width:200px;
+    height:100px;
+    margin-left:285px;
+    margin-top:-100px;
+}
+
+input#id_gunmodel{
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+label#label_gunmodel{
+    margin-left:47px;
+    padding-bottom:10px;
+}
+
+div#gunmodel{
+    width:200px;
+    height:100px;
+    margin-left:285px;
+    margin-top:-100px;
+}
+
+div#gunmodel{
+    width:200px;
+    height:100px;
+    margin-left:447px;
+    margin-top:-100px;
+}
+
+input#id_gunserialnumber{
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+label#label_gunserialnumber{
+    margin-left:37px;
+    padding-bottom:10px;
+}
+
+div#gunnum{
+    width:200px;
+    height:100px;
+    margin-left:674px;
+    margin-top:-100px;
+}
+
+input#id_gungauge{
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+label#label_gunguage{
+    margin-left:65px;
+    padding-bottom:10px;
+}
+
+div#gunguage{
+    width:200px;
+    height:100px;
+    margin-left:900px;
+    margin-top:-100px;
+}
+
+#col2.fieldWrapper{
+    height:75px;
+    width:1650px;
+   margin-left:300px;
+
+}
+
+div#hand{
+    width:100px;
+    height:100px;
+}
+
+input#id_hand {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_hand[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_hand{
+    margin-left:27px;
+    padding-bottom:10px;
+}
+
+div#lop{
+    width:100px;
+    height:100px;
+    margin-left:125px;
+    margin-top:-100px;
+}
+
+input#id_lop {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_lop[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_lop{
+    margin-left:30px;
+    padding-bottom:10px;
+}
+
+div#comb{
+    width:100px;
+    height:100px;
+    margin-left:250px;
+    margin-top:-100px;
+}
+
+input#id_comb {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_comb[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_comb{
+    margin-left:23px;
+    padding-bottom:10px;
+}
+
+div#face{
+    width:100px;
+    height:100px;
+    margin-left:378px;
+    margin-top:-100px;
+}
+
+input#id_face {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_face[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_face{
+    margin-left:27px;
+    padding-bottom:10px;
+}
+
+div#heel{
+    width:100px;
+    height:100px;
+    margin-left:505px;
+    margin-top:-100px;
+}
+
+input#id_heel {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_heel[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_heel{
+    margin-left:27px;
+    padding-bottom:10px;
+}
+
+div#montecarlo{
+    width:150px;
+    height:100px;
+    margin-left:633px;
+    margin-top:-100px;
+}
+
+input#id_montecarlo {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_montecarlo[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_montecarlo{
+    margin-left:0px;
+    padding-bottom:10px;
+}
+
+div#cast{
+    width:100px;
+    height:100px;
+    margin-left:763px;
+    margin-top:-100px;
+}
+
+input#id_cast {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_cast[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_cast{
+    margin-left:27px;
+    padding-bottom:10px;
+}
+
+div#toe{
+    width:100px;
+    height:100px;
+    margin-left:890px;
+    margin-top:-100px;
+}
+
+input#id_toe {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_toe[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_toe{
+    margin-left:27px;
+    padding-bottom:10px;
+}
+
+div#trigger{
+    width:100px;
+    height:100px;
+    margin-left:1017px;
+    margin-top:-100px;
+}
+
+input#id_trigger {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_trigger[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_trigger{
+    margin-left:17px;
+    padding-bottom:10px;
+}
+
+div#pitch{
+    width:100px;
+    height:100px;
+    margin-left:1147px;
+    margin-top:-100px;
+}
+
+input#id_pitch {
+    width:100px;
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_pitch[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+label#label_pitch{
+    margin-left:24px;
+    padding-bottom:10px;
+}
+
+#btn1{
+    height:65px;
+    margin-left:825px;
+    margin-top:67px;
+
+}

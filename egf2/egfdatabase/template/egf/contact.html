@@ -1,0 +1,63 @@
+{% extends 'base2.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet" href="../../../static/login/contact.css">
+    <section id="main">
+        <div id="title">Contact Us</div>
+
+        <div class="google-maps mb-100">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69618.67154015858!2d-81.
+            99580049670617!3d27.007421511126644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88
+            dca6e65987b879%3A0x4ec798258956799d!2s28435%20Silver%20Palm%20Dr%2C%20Punta%20Gorda%2C%20
+            FL%2033982!5e0!3m2!1sen!2sus!4v1633105941470!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="info">
+            <div id="addresstitle">ADDRESS</div>
+            <div id="address">28425 Silver Palm Dr.</div>
+            <div id="address2">Punta Gorda   Florida   33982</div>
+            <div id="phonetitle">PHONE</div>
+            <div id="phone">815-955-2074</div>
+            <div id="emailtitle">EMAIL</div>
+            <div id="email">elitegunfittiing@gmail.com</div>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Get In Touch</h2>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <form id="emailform" action="{% url 'egfdatabase:contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input id="name" type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6">
+                  <input id="email2" type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                </div>
+                <div class="col-12">
+                  <textarea id="textarea" name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12">
+                  <button id="btn1" type="submit" class="btn dento-btn">Send Message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <p>Arbie Web Design, Copyright &copy; 2019</p>
+    </footer>
+{% endblock %}

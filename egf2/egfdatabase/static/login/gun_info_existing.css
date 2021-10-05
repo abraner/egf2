@@ -1,0 +1,272 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+/* Work Area */
+section#workarea1{
+    width: 1903px;
+    height:750px;
+    display:inline-block;
+
+
+}
+
+form#form1{
+    height:652px;
+    width:950px;
+    background-color: light-brown;
+    margin-left:481px;
+    border: 2px solid #e8491d;
+}
+
+h1#formh1{
+    height:50px;
+    text-align:center;
+    margin-top:27px;
+    margin-bottom:0px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh2{
+    text-align:center;
+    margin:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh3{
+    text-align:center;
+    margin-bottom:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+#col1.fieldWrapper{
+    height:100px;
+    width:950px;
+   margin-left:500px;
+
+}
+
+#label_id{
+    width:100px;
+    text-align:center;
+    color:#e8491d;
+    padding-bottom:10px;
+}
+
+section#sec1, section#sec3, section#sec5, section#sec7, section#sec9{
+    width:946px;
+    height:60px;
+    background:#9A8D85;
+}
+
+section#sec2, section#sec4, section#sec6, section#sec8, section#sec10{
+    width:946px;
+    height:60px;
+    background:#a9a9a9;
+}
+
+div#menu2 {
+    float:left;
+    height:50px;
+    width:1235px;
+    margin-left:483px;
+    display:inline;
+
+}
+div#header1{
+    width:950px;
+    height:50px;
+}
+
+
+#newgun{
+    border: 2px solid #C0C0C0;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 175px;
+    height: 50px;
+    font-size: 22px;
+    color: #000000;
+    font-family: "Arial";
+    font-weight:bold;
+    text-align:center;
+    margin-left: 1556px;
+    transition: 0.6s;
+    padding:5px;
+    display:block;
+
+}
+a#newgun:hover{
+    background:#e8491d;
+    display:block;
+
+}
+
+div#A{
+    width:77px;
+    height:50px;
+    margin-left:77px;
+    text-align:center;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#F{
+    width:77px;
+    height:50px;
+    margin-left:0px;
+    margin-top:-50px;
+    text-align:center;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#B{
+    width:245px;
+    height:50px;
+    text-align:center;
+    margin-left:154px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#C{
+    width:200px;
+    height:50px;
+    text-align:center;
+    margin-left:399px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#D{
+    width:250px;
+    height:50px;
+    text-align:center;
+    margin-left:599px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#E{
+    width:96px;
+    height:50px;
+    text-align:center;
+    margin-left:850px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-bottom: 2px solid #e8491d;
+}
+
+
+div#guninfo{
+    background-color: tan;
+    width:950px;
+    height:60px;
+    font-size: 30px;
+    color:#e8491d;
+
+}
+
+A#gunid{
+    color:blue;
+    display:inline-block;
+    width:77px;
+    height:60px;
+    margin-left:-5px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#custid{
+    display:inline-block;
+    width:77px;
+    height:60px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#gunman{
+    display:inline-block;
+    width:245px;
+    height:60px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#gunmodel{
+    display:inline-block;
+    width:200px;
+    height:60px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#gunnum{
+    display:inline-block;
+    width:250px;
+    height:60px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#gunguage{
+    display:inline-block;
+    width:96px;
+    height:60px;
+    padding-top:8px;
+    font-size: 25px;
+    text-align:center;
+    margin-left:-5px;
+    border-bottom: 2px solid #e8491d;
+}
+#btn1{
+    margin-left:965px;
+    width:175px;
+    height:50px;
+
+}

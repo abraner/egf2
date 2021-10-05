@@ -1,0 +1,226 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+
+
+/* Work Area */
+
+section#workarea1{
+    width: 1903px;
+    height:750px;
+    display:inline-block;
+
+}
+
+input#id_matdescrip {
+    width:555px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matmanufacturer {
+    width:196px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matvendor {
+    width:200px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_mattype {
+    width:555px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matunitprice_1 {
+    display:none;
+}
+
+input#id_matvendor {
+    width:200px;
+}
+
+input#id_mattype {
+    width:555px;
+}
+
+label{
+    width:140px;
+    text-align:right;
+    padding-right:0px;
+    margin:10px;
+    margin-right:3px;
+
+    color:#000000;
+
+}
+
+
+
+#btn1{
+    margin-left: 157px;
+    margin-top:30px;
+    width: 557px;
+    height: 50px;
+
+}
+
+/* Section 2 */
+
+form#form2{
+    width: 770px;
+    height:320px;
+    background:#a9a9a9;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 10px;
+     font-weight:bold;
+
+}
+
+h1#formh2{
+    width: 843px;
+    background:#a9a9a9;
+     font-weight:bold;
+     text-align:center;
+     margin-top;45px;
+}
+
+#section2{
+    width:850px;
+    height:370px;
+    background:#a9a9a9;
+     border:#e8491d 3px solid;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* Media Queries */
+
+@media(min-width: 768px) and (max-width: 768px){
+section#workarea1{
+    width: 768px;
+    height:600px;
+}
+#section2{
+    width:765px;
+}
+input#id_custcompanytname {
+    width:525px;
+}
+body{
+  font: 14px/1.5 Arial, Helvetica,sans-serif;
+}
+#section2{
+    height:500px;
+}
+form#form2{
+    width: 750px;
+    height:470px;
+}
+label{
+    width:120px;
+}
+h1#formh2{
+    width: 760px;
+
+}
+input#id_custst {
+    margin-right:100px;
+}
+input#id_custwork2_0 {
+   width:143px;
+}
+input#id_custcell2_0 {
+    width:143px;
+}
+#btn1{
+    margin-left: 139px;
+    margin-top:20px;
+    width: 525px;
+    height: 50px;
+
+}
+}
+@media(min-width: 1024px) and (max-width: 1024px){
+section#workarea1{
+    width: 768px;
+    height:600px;
+    margin-left:90px;
+}
+form#form2{
+    width: 770px;
+    height:470px;
+    margin-left:35px;
+
+     }
+#section2{
+    height:500px;
+}
+input#id_custcompanytname {
+    width:525px;
+}
+body{
+  font: 14px/1.5 Arial, Helvetica,sans-serif;
+}
+form#form2{
+    width: 750px;
+}
+label{
+    width:120px;
+}
+h1#formh2{
+    width: 760px;
+
+}
+input#id_custst {
+    margin-right:100px;
+}
+input#id_custwork2_0 {
+   width:143px;
+}
+input#id_custcell2_0 {
+    width:143px;
+}
+#btn1{
+    margin-left: 139px;
+    margin-top:20px;
+    width: 525px;
+    height: 50px;
+
+}
+
+
+
+@media(min-width: 1280px) and (max-width: 1280px){
+section#workarea1{
+    width: 1280px;
+    height:640px;
+
+}
+#section2{
+    width:850px;
+    height:570px;
+    background:#a9a9a9;
+    margin-top: 10px;
+}
+
+
+}
+ @media(min-width: 1440px) and (max-width: 1440px){
+#section2{
+    margin-left:300px;
+}
+
+}

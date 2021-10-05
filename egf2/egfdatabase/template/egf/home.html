@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../../../static/login/home2.css">
+    {% block head %}
+    <title>Database Page</title>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Elite Gun Fitting Program</span></h1>
+            </div>
+            <nav>
+                <div id="menu">
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Settings
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/admin">Security</a></li>
+                            <li><a href="/login/cost">Cost Settings</a></li>
+                            <li><a href="/login/hvaccontractorrebate">HVAC Contractor Rebate</a></li>
+                            <li><a href="/login/completesystem">Manufacturer Rebate</a></li>
+                            <li><a href="/login/commedrebate">Electric/Gas Rebate</a></li>
+                            <li><a href="/login/instant">Instant Rebate</a></li>
+                            <li><a href="/login/warranty">Warranty</a></li>
+                            <li><a href="/login/material">Material</a></li>
+                        </div>
+                    </div>
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Customer Info.
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/ecgdatabase/cust_info_new">Add New Customer</a></li>
+                            <li><a href="/ecgdatabase/cust_info_existing">Search Existing Cust.</a></li>
+                        </div>
+                    </div>
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Material Info.
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/ecgdatabase/materialnew">Add New Material</a></li>
+
+
+
+
+                            <li><a href="/ecgdatabase/mat_info_existing">Search for Material</a></li>
+                        </div>
+                    </div>
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Printing
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/ecgdatabase/materialnew">Work Order</a></li>
+                            <li><a href="/ecgdatabase/mat_info_existing">Proposal</a></li>
+                        </div>
+                    </div>
+                    <a href="/login/mainbid">
+                        <button type="button" class="btn btn1">Maintenance</button>
+                    </a>
+
+                    <a href="/login/signjobsearch">
+                        <button type="button" class="btn btn1">Signed Job Search</button>
+                    </a>
+
+                    <a href="/login/accconqueue">
+                        <button type="button" class="btn btn1">Accepted Contracts</button>
+                    </a>
+
+                    <a href="/ecgdatabase/home">
+                        <button type="button" class="btn btn1">Home</button>
+                    </a>
+
+                    <a href="/ecgdatabase/index/">
+                        <button type="button" class="btn btn1">Log Out</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+</script>
+
+    {% block body %}
+    {% endblock %}
+
+</body>
+</html>

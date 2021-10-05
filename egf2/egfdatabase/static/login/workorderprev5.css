@@ -1,0 +1,1220 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+/* Work Area */
+
+a#back{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 14px;
+    margin-right: 171px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#back{
+    color: #000000;
+}
+
+a#back:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+
+a#pdf{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#pdf{
+    color: #000000;
+}
+
+a#pdf:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+
+a#emailpdf{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#emailpdf{
+    color: #000000;
+}
+
+a#emailpdf:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+h1#formh2{
+    width:250px;
+    margin-left:854px;
+    text-align:center;
+    margin-top:20px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh3{
+    text-align:center;
+    margin-bottom:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+#col1.fieldWrapper{
+    height:84px;
+    width:480px;
+    margin-left:218px;
+    margin-top:110px;
+}
+
+#col2.fieldWrapper{
+    height:84px;
+    width:575px;
+    margin-left:218px;
+    margin-top:32px;
+}
+
+#col3.fieldWrapper{
+    height:84px;
+    width:525px;
+    margin-left:218px;
+    margin-top:44px;
+}
+
+#col4.fieldWrapper{
+    height:230px;
+    width:418px;
+    margin-left:882px;
+    margin-top:-247px;
+}
+
+section#workarea1{
+    width: 1903px;
+    height:811px;
+    display:inline-block;
+    margin-top:0px;
+}
+
+#form2{
+    width: 1903px;
+    height:811px;
+    margin-top:-36px;
+    display:inline-block;
+}
+
+span.phone-field-ext{
+    display:none;
+}
+
+#id_workorder{
+    width:50px;
+    text-align:center;
+    margin-left:35px;
+    background-color: #a9a9a9;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+
+input#id_id {
+    background-color: #a9a9a9;
+    border: none;
+    pointer-events: none;
+}
+
+input#id_id[type="number"]{
+    -moz-appearance:textfield;
+    width:50px;
+    text-align:center;
+    margin-left:20px;
+}
+
+div#custid{
+    width:100px;
+    height:66px;
+    margin-left:-14px;
+    margin-top:-66px;
+    margin-bottom:21px;
+}
+
+input#id_custid{
+    width:50px;
+    text-align:center;
+    margin-left:23px;
+    background-color: #a9a9a9;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+label#label_custid{
+    margin-left:14px;
+    padding-bottom:10px;
+}
+
+#label_workorder{
+    width:125px;
+    margin-left:0px;
+    padding-bottom:10px;
+}
+
+div#workorder{
+    width:100px;
+    height:100px;
+    margin-left:175px;
+    margin-top:-100px;
+
+}
+
+div#workorderdate{
+    width:143px;
+    height:100px;
+    margin-left:325px;
+    margin-top:-100px;
+}
+
+#label_workorderdate{
+    width:143px;
+    margin-left:0px;
+    padding-bottom:10px;
+}
+
+#id_workorderdate{
+    width:100px;
+    text-align:center;
+    margin-left:17px;
+    background-color: #a9a9a9;
+    border: none;
+}
+
+input#id_gunid{
+    width:50px;
+    text-align:center;
+    margin-left:23px;
+    background-color: #a9a9a9;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+label#label_gunid{
+    margin-left:0px;
+    padding-bottom:10px;
+}
+
+div#gunid{
+    width:100px;
+    height:66px;
+    margin-left:70px;
+    margin-top:-100px;
+}
+
+#label_gunid{
+    width:100px;
+    text-align:center;
+    color:#e8491d;
+    padding-bottom:10px;
+}
+
+
+div#duplicating{
+    width:665px;
+    height:32px;
+    margin-left:0px;
+    margin-top:25px;
+}
+
+label#label_duplicating{
+    width:120px;
+    text-align: right;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+
+input#id_duplicating {
+    width:515px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#fittingtime{
+    width:200px;
+    height:32px;
+    margin-left:452px;
+    margin-top:0px;
+}
+
+label#label_fittingtime{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+
+input#id_fittingtime{
+    width:80px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#fittingstock{
+    width:375px;
+    height:32px;
+    margin-left:0px;
+    margin-top:-32px;
+}
+
+label#label_fittingstock{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_fittingstock{
+    width:243px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#refinishing{
+    width:380px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_refinishing{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_refinishing{
+    width:243px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#finishtype{
+    width:380px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_finishtype{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_finishtype{
+    width:242px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#recoilpad{
+    width:375px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_recoilpad{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_recoilpad{
+    width:243px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#recoilpadman{
+    width:365px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+
+}
+
+label#label_recoilpadman{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_recoilpadman{
+    width:132px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#recoilpadstyle{
+    width:635px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_recoilpadstyle{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_recoilpadstyle{
+    height:23px;
+    width:463px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#recoilpadnumber{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_recoilpadnumber{
+    width:120px;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_recoilpadnumber{
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#stockmod1{
+    width:415px;
+    height:32px;
+    margin-left:10px;
+    margin-top:0px;
+}
+
+label#label_stockmod1{
+    margin-left:115px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_stockmod1{
+    width:403px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#stockmod2{
+    width:415px;
+    height:32px;
+    margin-left:0px;
+    margin-top:40px;
+}
+
+label#label_stockmod2{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_stockmod2{
+    width:403px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#stockmod3{
+    width:415px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_stockmod3{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_stockmod3{
+    width:403px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#stockrepairtype{
+    width:418px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_stockrepairtype{
+    width:120px;
+    text-align:right;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+
+}
+
+input#id_stockrepairtype{
+    width:283px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#stockrepair{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_stockrepair{
+    width:120px;
+    text-align:right;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_stockrepair{
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#checkering{
+    width:425px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_checkering{
+    width:120px;
+    text-align:right;
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_checkering{
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#wood{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wood{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wood{
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+
+div#description1{
+    width:450px;
+    height:65px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+#col5.fieldWrapper{
+    height:220px;
+    width:665px;
+    margin-left:610px;
+    margin-top:80px;
+}
+
+div#label2{
+    width:50px;
+    height:32px;
+    margin-left:24px;
+}
+
+label#label_description1{
+    margin-left:143px;
+    margin-right:6px;
+    margin-bottom:0px;
+    padding-bottom:10px;
+}
+
+input#id_description1{
+    height:23px;
+    width:450px;
+    margin-top:0px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    display: inline-block;
+}
+
+div#labor1{
+    width:95px;
+    height:65px;
+    margin-left:465px;
+    margin-top:-60px;
+}
+
+label#label_labor1{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_labor1{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_labor1_1{
+    display:none;
+}
+
+div#wholesalecost1{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wholesalecost1{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wholesalecost1{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+div#retailmaterialcost1{
+    width:260px;
+    height:65px;
+    margin-left:569px;
+    margin-top:-64px;
+}
+
+div#label3{
+    width:450px;
+    height:32px;
+    margin-left:5px;
+}
+
+label#label_retailmaterialcost1{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_retailmaterialcost1{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_retailmaterialcost1_1{
+    display:none;
+}
+
+div#description2{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:5px;
+}
+
+label#label_description2{
+    margin-left:0px;
+    margin-right:0px;
+    padding-bottom:0px;
+}
+
+input#id_description2{
+    height:23px;
+    width:450px;
+    margin-top:0px;
+    margin-left:-5px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    display: inline-block;
+}
+
+div#labor2{
+    width:95px;
+    height:65px;
+    margin-left:465px;
+    margin-top:-60px;
+}
+
+label#label_labor2{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_labor2{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+
+}
+
+input#id_labor2_1{
+    display:none;
+}
+
+div#retailmaterialcost2{
+    width:108px;
+    height:65px;
+    margin-left:558px;
+    margin-top:-38px;
+}
+
+label#label_retailmaterialcost2{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_retailmaterialcost2{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_retailmaterialcost2_1{
+    display:none;
+}
+
+
+div#wholesalecost2{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wholesalecost2{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wholesalecost2{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_wholesalecost2_1{
+    display:none;
+}
+
+div#description3{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:-25px;
+}
+
+label#label_description3{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_description3{
+    height:23px;
+    width:450px;
+    margin-top:0px;
+    margin-left:-11px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    display: inline-block;
+}
+
+div#labor3{
+    width:95px;
+    height:65px;
+    margin-left:465px;
+    margin-top:-60px;
+}
+
+label#label_labor3{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_labor3{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_labor3_1{
+    display:none;
+}
+
+div#wholesalecost3{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wholesalecost3{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wholesalecost3{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+div#retailmaterialcost3{
+    width:108px;
+    height:65px;
+    margin-left:558px;
+    margin-top:-38px;
+}
+
+label#label_retailmaterialcost3{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_retailmaterialcost3{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_retailmaterialcost3_1{
+    display:none;
+}
+
+div#description4{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:-25px;
+}
+
+label#label_description4{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_description4{
+    height:23px;
+    width:450px;
+    margin-top:0px;
+    margin-left:-11px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    display: inline-block;
+}
+
+div#labor4{
+    width:95px;
+    height:65px;
+    margin-left:465px;
+    margin-top:-60px;
+}
+
+label#label_labor4{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_labor4{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_labor4_1{
+    display:none;
+}
+
+div#wholesalecost4{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wholesalecost4{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wholesalecost4{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+div#retailmaterialcost4{
+    width:108px;
+    height:65px;
+    margin-left:558px;
+    margin-top:-38px;
+}
+
+label#label_retailmaterialcost4{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_retailmaterialcost4{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_retailmaterialcost4_1{
+    display:none;
+}
+
+div#description5{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:-25px;
+}
+
+label#label_description5{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_description5{
+    height:23px;
+    width:450px;
+    margin-top:0px;
+    margin-left:-11px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    display: inline-block;
+}
+
+div#labor5{
+    width:95px;
+    height:65px;
+    margin-left:465px;
+    margin-top:-60px;
+}
+
+label#label_labor5{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_labor5{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_labor5_1{
+    display:none;
+}
+
+div#wholesalecost5{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+label#label_wholesalecost5{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_wholesalecost5{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+div#retailmaterialcost5{
+    width:108px;
+    height:65px;
+    margin-left:558px;
+    margin-top:-38px;
+}
+
+label#label_retailmaterialcost5{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_retailmaterialcost5{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+input#id_retailmaterialcost5_1{
+    display:none;
+}
+
+#col6.fieldWrapper{
+    height:150px;
+    width:450px;
+    margin-left:1318px;
+    margin-top:-548px;
+}
+
+select#id_proposaltype{
+    width:90px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+
+
+
+div#notes{
+    width:7450px;
+    height:200px;
+    margin-left:0px;
+    margin-top:90px;
+}
+
+label#label_notes{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+textarea#id_notes{
+    height:125px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+    -moz-appearance: textfield;
+}
+
+div#proposaltype{
+    width:708px;
+    height:32px;
+    margin-left:0px;
+    margin-top:-236px;
+}
+
+label#label_proposaltype{
+    margin-left:0px;
+    margin-right:6px;
+    padding-bottom:10px;
+}
+
+input#id_proposaltype{
+    width:227px;
+    height:23px;
+    background-color: #a9a9a9;
+    border: none;
+    text-align:center;
+}
+#id_notes{
+    width:303px;
+
+}
+
+#btn1.btn-success{
+    height:65px;
+    margin-left:1429px;
+    margin-top:122px;
+
+}
+
+
+#btn_delete1.confirm-delete{
+    display: inline-block;
+    height:65px;
+    width:193px;
+    margin-left:1429px;
+    margin-bottom: 0px;
+    margin-top:46px;
+    color:#000;
+    background-color: #ffc107;
+    padding-top:17px;
+    font-weight: 600;
+    padding-left: 17px;
+    padding-right: 11px;
+
+}
