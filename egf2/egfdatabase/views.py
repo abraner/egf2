@@ -16,3 +16,7 @@ def index(request):
 
 def base(request):
     return render(request, 'egf/base2.html')
+
+
+def about(request):
+    return render(request, 'egf/about.html')
