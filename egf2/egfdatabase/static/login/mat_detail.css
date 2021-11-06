@@ -1,0 +1,191 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+
+
+/* Work Area */
+
+section#workarea1{
+    width: 1903px;
+    height:750px;
+    display:inline-block;
+}
+
+label{
+    width:150px;
+    height:30px;
+    text-align:right;
+    padding-right:3px;
+    margin-bottom:15px;
+    color:#000000;
+    margin-left:76px;
+}
+
+
+
+
+/* Section 2 */
+
+form#form2{
+    width: 843px;
+    height:564px;
+    background:#a9a9a9;
+    margin-left: 0px;
+    margin-top: 20px;
+     font-weight:bold;
+}
+
+h1#formh2{
+    width: 543px;
+    background:#a9a9a9;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom: 67px;
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#section2{
+    width:850px;
+    height:670px;
+    background:#a9a9a9;
+     border:#e8491d 3px solid;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input#id_description{
+    width:387px;
+    height:33px;
+    -moz-appearance: textfield;
+    padding-left:8px;
+    text-align:center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius:0px;
+    border-color:black;
+}
+
+input#id_labor{
+    width:75px;
+    height:33px;
+    -moz-appearance: textfield;
+    margin-right:340px;
+    padding-left:8px;
+    text-align:center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius:0px;
+    border-color:black;
+}
+
+input#id_wholesalecost{
+    width:75px;
+    height:33px;
+    -moz-appearance: textfield;
+    margin-right:328px;
+    padding-left:8px;
+    text-align:center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius:0px;
+    border-color:black;
+}
+
+input#id_retailcost{
+    width:75px;
+    height:33px;
+    -moz-appearance: textfield;
+    margin-right:0px;
+    padding-left:8px;
+    text-align:center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius:0px;
+    border-color:black;
+}
+
+section#buttons{
+    width:225px;
+    height:45px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+a.btn.btn9{
+    text-align: center;
+    margin-top: 480px;
+}
+
+a.btn.btn9{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a.btn.btn9{
+    color: #000000;
+}
+
+a.btn.btn9:hover{
+    color: #35424a;
+    background: #e8491d;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:375px){
+
+}
+
+@media screen and (max-width:566px) and (min-width:376px){
+
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+
+}
+
+@media screen and (max-width:810px) and (min-width:681px){
+
+}
+
+@media screen and (max-width:1080px) and (min-width:811px){
+
+}
+
+@media screen and (max-width:1366px) and (min-width:1081px){
+section#workarea1{
+    width: 1337px;
+    height:750px;
+    display:inline-block;
+}
+
+
+}
