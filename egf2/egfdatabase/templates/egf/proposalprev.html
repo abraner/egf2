@@ -1,0 +1,214 @@
+{% extends 'home.html' %}
+<h1>EGF Bidding Program</h1>
+{% block head %}
+<title>ECG Work Order Page</title>
+{% endblock %}
+
+{% block body %}
+<body>
+
+<link rel="stylesheet" href="../../../static/login/proposalprev13.css">
+<a id="back"  href="{% url 'egfdatabase:guninfo' instance.gunid %}">Back Button</a>
+<a id="pdf" class="btn btn-info" href="{% url 'egfdatabase:generate_view' instance.workorderid %}" target="_blank">View Invoice</a>
+<a id="emailpdf" class="btn btn-info"  href="{% url 'egfdatabase:pdf_download' instance.workorderid  %}">Download</a>
+<!--<a id="emailpdf"  href="">Email PDF</a>-->
+<center id="page">
+    <form method="post" id="form2"
+          checknum2-url="{% url 'egfdatabase:checknum2' instance.workorderid %}"
+          finaldate-url="{% url 'egfdatabase:finaldate' instance.workorderid %}"
+          finalpay-url="{% url 'egfdatabase:finalpay' instance.workorderid %}"
+          >
+        <div id="header">
+            <h5 id="formh2">Elite Gun Fitting</h5>
+            {% csrf_token %}
+            {{ form.name_of_field }}
+            <div id="workorder">
+            {{ form.workorder.errors }}
+            <label id="label_workorder">Work Order ID</label>
+            {{ form.workorder }}
+            </div>
+            <div id="workorderdate">
+            {{ form.workorderdate.errors }}
+            <label id="label_workorderdate">Work Order Date</label>
+            {{ form.workorderdate }}
+                <h6 id="phone" >815-955-2074</h6>
+                <h6 id="name" >Alan Braner</h6>
+                <h6 id="website" >www.egf.com</h6>
+                <h6 id="email1" >elitegunfitting@gmail.com</h6>
+            </div>
+        </div>
+        <div id="cust">
+            {% for result in CustomerInfo %}
+                <div id="id" >Cust ID:</div>
+                <div id="custid" >
+                    {{ result.id }}
+                </div>
+               <div id="first" >First Name:</div>
+                <div id="custfirst" >
+                    {{ result.custfirstname }}
+                </div>
+                <div id="last" >Last Name:</div>
+                <div id="custlast" >
+                    {{ result.custlastname }}
+                </div>
+                <div id="add" >Address:</div>
+                <div id="custadd" >
+                    {{ result.custadd1 }}
+                </div>
+                <div  id="city" >City:</div>
+                <div id="custcity" >
+                    {{ result.custcity }}
+                </div>
+                <div  id="state" >State:</div>
+                <div id="custst" >
+                    {{ result.custst }}
+                </div>
+                <div id="cell" >Cell Number:</div>
+                <div id="custcell" >
+                    {{ result.custcell1 }}
+                </div>
+                <div id="email" >Email:</div>
+                <div id="custemail" >
+                    {{ result.custemail1 }}
+                </div>
+            {% endfor %}
+        </div>
+        <div id="gun">
+        {% for result in GunInfo %}
+            <div id="gunidlabel" >Gun ID:</div>
+            <div id="gunid" >
+                {{ result.gunid }}
+            </div>
+            <div id="gunmanlabel" >Manufacturer:</div>
+            <div id="gunman" >
+                {{ result.gunmanufacturer }}
+            </div>
+            <div id="gunmodellabel" >Model:</div>
+            <div id="gunmodel" >
+                {{ result.gunmodel }}
+            </div>
+            <div id="gunseriallabel">Serial #:</div>
+            <div id="gunserial" >
+                {{ result.gunserialnumber }}
+            </div>
+            <div id="gungaugelabel">Gauge:</div>
+            <div id="gungauge" >
+                {{ result.gungauge }}
+            </div>
+        {% endfor %}
+        </div>
+        <div id="workorder1">
+            <tr>
+                <div id="matdescript" >Description</div>
+                <div id="matlabor" >Labor</div>
+                <div id="matretail" >Retail</div>
+            </tr>
+            {% for result in WorkOrderForm %}
+            <div id=matcol>
+            <div id="descriptwo" >
+                {{ result.description }}
+            </div>
+            <div id="laborwo" >
+                ${{ result.labor }}
+            </div>
+            <div id="retailwo" >
+                ${{ result.retail }}
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+        <div class="fieldWrapper" id="col1">
+            <div id="labor">
+                {{ form.labor.errors }}
+                <label id="laborlabel">Labor</label>
+                {{ form.labor }}
+            </div>
+            <div id="mat">
+                {{ form.mat.errors }}
+                <label id="matlabel">Material</label>
+                {{ form.mat }}
+            </div>
+            <div id="saletax">
+                {{ form.saletax.errors }}
+                <label id="saletaxlabel">Sales Tax</label>
+                {{ form.saletax }}
+            </div>
+            <div id="totalmat">
+                {{ form.totalmat.errors }}
+                <label id="totalmatlabel">Total Material</label>
+                {{ form.totalmat }}
+            </div>
+            <div id="totaljobcost">
+                {{ form.totaljobcost.errors }}
+                <label id="totallaborlabel">Total Job Cost</label>
+                {{ form.totaljobcost }}
+            </div>
+        </div>
+        <div class="fieldWrapper" id="col2">
+            <div id="shipping">
+                {{ form.shipping.errors }}
+                <label id="label_shipping">Shipping</label>
+                {{ form.shipping }}
+            </div>
+            <div id="jobcostshipping">
+                {{ form.jobcostshipping.errors }}
+            <label id="label_jobcostshipping">Total Job Cost w/Shipping</label>
+                <div id="jobcostshipping1">
+                    <div id="id_jobcostshipping"></div>
+                    <div id="input1" style="visibility: visible;">{{ form.jobcostshipping }}</div>
+                </div>
+            </div>
+            <div id="downpay">
+                {{ form.downpay.errors }}
+                <label id="label_downpay">Down payment</label>
+                {{ form.downpay }}
+            </div>
+            <div id="balance">
+                {{ form.balance.errors }}
+                <label id="label_balance">Balance</label>
+
+                    <div id="id_balance"></div>
+                    <div id="input2" style="visibility: visible;">{{ form.balance }}</div>
+
+            </div>
+            <div id="finalpay">
+                {{ form.finalpay.errors }}
+                <label id="label_finalpay">Final Payment</label>
+                {{ form.finalpay }}
+            </div>
+            <div id="downpaydate">
+                {{ form.downpaydate.errors }}
+                <label id="label_downpaydate">Down Payment Date</label>
+                {{ form.downpaydate }}
+            </div>
+            <div id="finalpaydate">
+                {{ form.finalpaydate.errors }}
+                <label id="label_finalpaydate">Final Payment Date</label>
+                {{ form.finalpaydate}}
+            </div>
+            <div id="checknum1">
+                {{ form.checknum1.errors }}
+                <label id="label_checknum1">Check Number</label>
+                {{ form.checknum1 }}
+            </div>
+            <div id="checknum2">
+                {{ form.checknum2.errors }}
+                <label id="label_checknum2">Check Number</label>
+                {{ form.checknum2 }}
+            </div>
+            <br>
+            <div id="notes">
+                {{ form.notes.errors }}
+                {{ form.notes }}
+            </div>
+        </div>
+    </form>
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+
+
+
+</script>
+{% endblock %}
