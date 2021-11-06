@@ -1,0 +1,979 @@
+<head>
+<style>
+   @page {
+    size: a4 portrait;
+
+
+
+    @frame header_frame {           /* Header Frame */
+         left: 0pt; width: 595pt; top: 1pt; height: 80pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    @frame cust_frame {          /* Customer Frame */
+        left: 0pt; width: 595pt; top: 81pt; height: 80pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    @frame gun_frame {           /* Gun Frame */
+        left: 0pt; width: 595pt; top: 161pt; height: 30pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+    @frame mat_frame {           /* Mat Frame */
+        left: 25pt; width: 545pt; top: 200pt; height: 275pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    @frame jobcost_frame {           /* JobCost Frame */
+        left: 25pt; width: 545pt; top: 485pt; height: 138pt;
+
+    }
+
+    @frame downpayment_frame {           /* Down Payment Frame */
+        left: 25pt; width: 545pt; top: 630pt; height: 75pt;
+
+    }
+
+    @frame notes_frame {           /* Notes Frame */
+        left: 25pt; width: 545pt; top: 705pt; height: 75pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+
+
+}
+
+#formh2{
+width:225px;
+height:34px;
+margin-left:272px;
+margin-top:20px;
+font-family: Times New Roman;
+font-style: italic;
+font-weight: bold;
+font-size:30px;
+padding-top:20px;
+}
+
+#label_workorder{
+width:83px;
+margin-left:10px;
+margin-top:0px;
+padding-top:-60px;
+font-size: 12px;
+font-weight:bold;
+}
+
+#workorder{
+width:50px;
+font-size: 12px;
+margin-left:100px;
+margin-top:0px;
+padding-top:-22px;
+}
+
+#label_workorderdate{
+width:225px;
+margin-left:590px;
+padding-top:-20px;
+font-size: 12px;
+font-weight:bold;
+}
+
+#workorderdate{
+font-size: 12px;
+margin-left:700px;
+margin-top:0px;
+padding-top:-20px;
+
+}
+
+#phone{
+margin-left:328px;
+padding-top: 30px;
+font-weight: bold;
+font-size: 14px;
+}
+
+#name{
+margin-left:333px;
+padding-top:-5px;
+font-weight: bold;
+font-size: 14px;
+}
+
+#website{
+margin-left:12px;
+padding-top:-20px;
+font-size: 14px;
+font-weight:bold;
+}
+
+#email1{
+margin-left:600px;
+padding-top: -23px;
+font-size: 14px;
+font-weight:bold;
+}
+
+#id{
+    width:60px;
+    margin-left:46px;
+    padding-top:20px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+
+#custid{
+    width:60px;
+    margin-left:103px;
+    padding-top:-23px;
+    font-size: 14px;
+
+}
+
+div#first{
+    width:80px;
+    margin-left:23px;
+    margin-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custfirst{
+    width:125px;
+    margin-left:107px;
+    padding-top:-23px;
+    font-size: 14px;
+
+}
+
+
+div#last{
+    width:80px;
+    margin-left:24px;
+    margin-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custlast{
+    width:125px;
+    margin-left:107px;
+    padding-top:-23px;
+    font-size: 14px;
+
+}
+
+div#add{
+    width:80px;
+    margin-left:273px;
+    padding-top:-70px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custadd{
+    width:170px;
+    margin-left:340px;
+    padding-top:-23px;
+    font-size: 14px;
+}
+
+div#city{
+    width:80px;
+    margin-left:301px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcity{
+    width:200px;
+    margin-left:340px;
+    padding-top:-21px;
+    font-size: 14px;
+}
+
+div#state{
+    width:191px;
+    margin-left:293px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custst{
+    width:25px;
+    margin-left:340px;
+    padding-top:-23px;
+    font-size: 14px;
+}
+
+div#cell{
+    width:95px;
+    margin-left:542px;
+    padding-top:-75px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcell{
+    width:107px;
+    margin-left:636px;
+    padding-top:-23px;
+    font-size: 14px;
+}
+
+div#email{
+    width:95px;
+    margin-left:587px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custemail{
+    width:165px;
+    margin-left:636px;
+    padding-top:-23px;
+    font-size: 14px;
+}
+
+#gunidlabel{
+    width:65px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:right;
+
+}
+
+#gunid{
+    width:30px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+#gunmanlabel{
+    width:110px;
+    margin-left:0px;
+    margin-top:-20px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:right;
+
+}
+
+#gunman{
+    width:120px;
+    margin-left:0px;
+    padding-left:3px;
+    text-align:left;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+#gunmodellabel{
+    width:60px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:right;
+
+}
+
+#gunmodel{
+    width:140px;
+    margin-left:0px;
+    padding-left:3px;
+    text-align:left;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+#gunseriallabel{
+    width:104px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+
+#gunserial{
+    width:75px;
+    margin-left:0px;
+    padding-left:3px;
+    text-align:left;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+#gungaugelabel{
+    width:50px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+
+#gungauge{
+    width:30px;
+    margin-left:0px;
+    padding-top:0px;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+#matdescript{
+    width:525px;
+    height:24px;
+    font-size: 14px;
+    font-weight:bold;
+    padding-top:3px;
+    padding-left:0px;
+    background-color: 	#C0C0C0;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+#matlabor{
+    width:100px;
+    height:24px;
+    margin-left:0px;
+    margin-top:-26px;
+    font-size: 14px;
+    font-weight:bold;
+    padding-top:3px;
+    background-color: 	#C0C0C0;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#matretail{
+    width:100px;
+    height:24px;
+    margin-left:0px;
+    margin-top:-26px;
+    font-size: 14px;
+    font-weight:bold;
+    padding-top:3px;
+    background-color: 	#C0C0C0;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+
+#descriptwo{
+    width:525px;
+    height:24px;
+    text-align:center;
+    margin-left:0px;
+    padding-top:3px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#laborwo{
+    width:100px;
+    height:24px;
+    text-align:center;
+    margin-left:0px;
+    padding-top:3px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#retailwo{
+    width:100px;
+    height:24px;
+    text-align:center;
+    margin-left:0px;
+    padding-top:3px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#jobcost_frame{
+    margin-top:410px;
+
+
+}
+
+#laborlabel{
+    height:24px;
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    padding-left:0px;
+    padding-top:3px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+
+
+
+#labor{
+    font-weight:normal;
+    text-align:right;
+    width:70px;
+    height:24px;
+    margin-right:0px;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#matlabel{
+    height:24px;
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    padding-top:3px;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+
+#mat{
+    font-weight:normal;
+    text-align:right;
+    height:24px;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#saletaxlabel{
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    font-size: 12px;
+    font-weight:bold;
+    padding-top:3px;
+}
+
+#saletax{
+    font-weight:normal;
+    text-align:right;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#totalmatlabel{
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    font-size: 12px;
+    font-weight:bold;
+    padding-top:3px;
+
+}
+#totalmat{
+    font-weight:normal;
+    text-align:right;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#totaljobcostlabel{
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    font-size: 12px;
+    font-weight:bold;
+    padding-top:3px;
+
+}
+
+#totaljobcost{
+    font-weight:normal;
+    text-align:right;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+#shippinglabel{
+    width:656px;
+    text-align:right;
+    padding-right:3px;
+    font-size: 12px;
+    font-weight:bold;
+    padding-top:3px;
+
+}
+
+#shipping{
+    font-weight:normal;
+    text-align:right;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#jobcostshippinglabel{
+    width:656px;
+    margin-top:100px;
+    text-align:right;
+    padding-right:3px;
+    font-size: 12px;
+    font-weight:bold;
+    padding-top:3px;
+}
+#jobcostshipping{
+    font-weight:normal;
+    text-align:right;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right:4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+}
+
+#downpaydatelabel{
+    width:191px;
+    height:0px;
+    margin-left:0px;
+    padding-top:4px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:right;
+
+}
+
+#downpaydate{
+    width:100px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:center;
+    padding-top:4px;
+    font-size: 14px;
+    font-weight:normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#checknum1label{
+    width:135px;
+    height:0px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:right;
+    padding-top:3px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+}
+#checknum1{
+    width:70px;
+    height:24px;
+    margin-left:0px;
+    font-weight:normal;
+    text-align:center;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#downpaymentlabel{
+    width:160px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:right;
+    padding-top:3px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+}
+#downpay{
+    width:70px;
+    height:24px;
+    margin-left:577px;
+    font-weight:normal;
+    text-align:right;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#balancelabel{
+    width:656px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:right;
+    padding-top:3px;
+    padding-right:5px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#balance{
+    width:70px;
+    height:24px;
+    margin-left:0px;
+    font-weight:normal;
+    text-align:right;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#finalpaydatelabel{
+    width:191px;
+    height:0px;
+    margin-left:0px;
+    padding-top:4px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:right;
+}
+
+#finalpaydate{
+    width:100px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:center;
+    padding-top:4px;
+    font-size: 14px;
+    font-weight:normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#checknum2label{
+    width:135px;
+    height:0px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:right;
+    padding-top:3px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+}
+#checknum2{
+    width:70px;
+    height:24px;
+    margin-left:0px;
+    font-weight:normal;
+    text-align:center;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#finalpaylabel{
+    width:160px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    text-align:right;
+    padding-top:3px;
+    padding-right:3px;
+    font-size: 14px;
+    font-weight:bold;
+}
+#finalpay{
+    width:70px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    padding-top:3px;
+    font-size: 14px;
+    font-weight:normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#noteslabel{
+    width:130px;
+    height:24px;
+    font-size: 14px;
+    font-weight:bold;
+    padding-left:5px;
+    padding-top:5px;
+}
+#notes{
+    font-size: 14px;
+    padding-left:5px;
+}
+</style>
+<div id="page">
+    <form method="post" id="form2">
+        <div id="header_frame">
+        <div id="header_content">
+            <div id="formh2">Elite Gun Fitting</div>
+
+            {% for result in WorkOrder %}
+            <!--{{ form.name_of_field }}-->
+
+            <div id="label_workorder">Work Order ID</div>
+            <div id="workorder">
+            {{ result.workorder }}
+            </div>
+
+            <div id="label_workorderdate">Work Order Date</div>
+            <div id="workorderdate">
+            {{ result.workorderdate }}
+            </div>
+           {% endfor %}
+        </div>
+                <div id="phone" >815-955-2074</div>
+                <div id="name" >Alan Braner</div>
+                <div id="website" >www.egf.com</div>
+                <div id="email1" >elitegunfitting@gmail.com</div>
+</div>
+        <div id="cust_frame">
+            <div id="cust"></div>
+            {% for result in CustomerInfo %}
+                <div id="id" >Cust ID:</div>
+                <div id="custid" >
+                    {{ result.id }}
+                </div>
+               <div id="first" >First Name:</div>
+                <div id="custfirst" >
+                    {{ result.custfirstname }}
+                </div>
+                <div id="last" >Last Name:</div>
+                <div id="custlast" >
+                    {{ result.custlastname }}
+                </div>
+                <div id="add" >Address:</div>
+                <div id="custadd" >
+                    {{ result.custadd1 }}
+                </div>
+                <div  id="city" >City:</div>
+                <div id="custcity" >
+                    {{ result.custcity }}
+                </div>
+                <div  id="state" >State:</div>
+                <div id="custst" >
+                    {{ result.custst }}
+                </div>
+                <div id="cell" >Cell Number:</div>
+                <div id="custcell" >
+                    {{ result.custcell1 }}
+                </div>
+                <div id="email" >Email:</div>
+                <div id="custemail" >
+                    {{ result.custemail1 }}
+                </div>
+            {% endfor %}
+        </div>
+        <br>
+        <br>
+
+               <br>
+        <div id="gun_frame">
+            <table>
+                <tr>
+            {% for result in GunInfo %}
+            <th id="gunidlabel" >Gun ID:</th>
+
+            <th id="gunid" >
+                {{ result.gunid }}
+            </th>
+            <th id="gunmanlabel" >Manufacturer:</th>
+            <th id="gunman" >
+                {{ result.gunmanufacturer }}
+            </th>
+            <th id="gunmodellabel" >Model:</th>
+            <th id="gunmodel" >
+                {{ result.gunmodel }}
+            </th>
+            <th id="gunseriallabel">Serial Number:</th>
+            <th id="gunserial" >
+                {{ result.gunserialnumber }}
+            </th>
+            <th id="gungaugelabel">Gauge:</th>
+            <th id="gungauge" >
+                {{ result.gungauge }}
+            </th>
+            {% endfor %}
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <th id="matdescript" >Description</th>
+                <th id="matlabor" >Labor</th>
+                <th id="matretail" >Material</th>
+            </tr>
+            <tr>
+                {% for result in WorkOrderForm %}
+                <td id="descriptwo">{{ result.description }}</td>
+                <td id="laborwo">${{ result.labor }}</td>
+                <td id="retailwo">${{ result.retail }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+         <div id="jobcost_frame">
+            <table>
+                <tr>
+            {% for result in WorkOrder %}
+            <th id="laborlabel" >Labor</th>
+
+            <th id="labor" >
+                ${{ result.labor }}
+            </th>
+                <tr>
+            <th id="matlabel" >Material</th>
+            <th id="mat" >
+                ${{ result.mat }}
+            </th>
+                <tr>
+            <th id="saletaxlabel" >Sale Tax</th>
+            <th id="saletax" >
+                ${{ result.saletax }}
+            </th>
+                <tr>
+            <th id="totalmatlabel">Total Material</th>
+            <th id="totalmat" >
+                ${{ result.totalmat }}
+            </th>
+                <tr>
+            <th id="totaljobcostlabel">Total Job Cost</th>
+            <th id="totaljobcost" >
+                ${{ result.totaljobcost }}
+            </th>
+                <tr>
+                    <th id="shippinglabel">Shipping</th>
+            <th id="shipping" >
+                ${{ result.shipping }}
+            </th>
+                <tr>
+                <th id="jobcostshippinglabel">Total Job Cost w/Shipping</th>
+            <th id="jobcostshipping" >
+                ${{ result.jobcostshipping }}
+            </th>
+            {% endfor %}
+                </tr>
+            </table>
+        </div>
+
+        <div id="downpayment_frame">
+            <table>
+                <tr>
+            {% for result in WorkOrder %}
+            <th id="downpaydatelabel" >Down Payment Date</th>
+
+            <th id="downpaydate" >
+                {{ result.downpaydate }}
+            </th>
+            <th id="checknum1label" >Check Number</th>
+            <th id="checknum1" >
+                {{ result.checknum1 }}
+            </th>
+            <th id="downpaymentlabel" >Down Payment</th>
+            <th id="downpay" >
+                ${{ result.downpay }}
+            </th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+            <th id="balancelabel">Balance</th>
+            <th id="balance" >
+                ${{ result.balance }}
+            </th>
+                </tr>
+            </table>
+             <table>
+                <tr>
+            <th id="finalpaydatelabel">Final Payment Date</th>
+            <th id="finalpaydate" >
+                {{ result.finalpaydate }}
+            </th>
+            <th id="checknum2label">Check Number</th>
+            <th id="checknum2" >
+                {{ result.checknum2 }}
+            </th>
+            <th id="finalpaylabel">Final Payment</th>
+            <th id="finalpay" >
+                ${{ result.finalpay }}
+            </th>
+            {% endfor %}
+                </tr>
+            </table>
+        </div>
+        <div id="note_frame">
+            {% for result in WorkOrder %}
+            <div id="noteslabel" >Notes</div>
+            <div id="notes" >
+                {{ result.notes }}
+            </div>
+            {% endfor %}
+        </div>
+    </form>
+    </div>
