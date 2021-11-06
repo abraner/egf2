@@ -1,0 +1,271 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>ECG Work Order Page</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<link rel="stylesheet" href="../../../../static/login/evalueprev1.css">
+<a id="evalueback"  href="../">Back Button</a>
+<a id="evalueemailpdf"  href="{% url 'egfdatabase:generate_view2' instance.gunid %}" target="_blank">View Invoice</a>
+<a id="evaluepdf"  href="{% url 'egfdatabase:pdf_download2' instance.gunid  %}">Download</a>
+<center id="page">
+    <br>
+    <form method="post" id="form2">
+        <div id="header">
+            <h5 id="formh2">Elite Gun Fitting</h5>
+            {% csrf_token %}
+            {{ form.name_of_field }}
+                <h6 id="phone" >815-955-2074</h6>
+                <h6 id="name" >Alan Braner</h6>
+                <h6 id="website" >www.egf.com</h6>
+                <h6 id="email1" >elitegunfitting@gmail.com</h6>
+        </div>
+        <div id="cust">
+            {% for result in CustomerInfo %}
+                <div id="id" >Cust ID:</div>
+                <div id="custid" >
+                    {{ result.id }}
+                </div>
+               <div id="first" >First Name:</div>
+                <div id="custfirst" >
+                    {{ result.custfirstname }}
+                </div>
+                <div id="last" >Last Name:</div>
+                <div id="custlast" >
+                    {{ result.custlastname }}
+                </div>
+                <div id="add" >Address:</div>
+                <div id="custadd" >
+                    {{ result.custadd1 }}
+                </div>
+                <div  id="city" >City:</div>
+                <div id="custcity" >
+                    {{ result.custcity }}
+                </div>
+                <div  id="state" >State:</div>
+                <div id="custst" >
+                    {{ result.custst }}
+                </div>
+                <div id="cell" >Cell Number:</div>
+                <div id="custcell" >
+                    {{ result.custcell1 }}
+                </div>
+                <div id="email" >Email:</div>
+                <div id="custemail" >
+                    {{ result.custemail1 }}
+                </div>
+            {% endfor %}
+        </div>
+        <div id="gun">
+            {% for result in GunInfo %}
+            <div id="gunidlabel" >Gun ID:</div>
+            <div id="gunid" >
+                {{ result.gunid }}
+            </div>
+            <div id="gunmanlabel" >Manufacturer:</div>
+            <div id="gunman" >
+                {{ result.gunmanufacturer }}
+            </div>
+            <div id="gunmodellabel" >Model:</div>
+            <div id="gunmodel" >
+                {{ result.gunmodel }}
+            </div>
+            <div id="gunseriallabel">Serial Number:</div>
+            <div id="gunserial" >
+                {{ result.gunserialnumber }}
+            </div>
+            <div id="gungaugelabel">Gauge:</div>
+            <div id="gungauge" >
+                {{ result.gungauge }}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="workorder1">
+            {% for result in Evaluation %}
+            <div id="evalueidlabel">Evalue. ID:</div>
+            <div id="evalueid" >
+                {{ result.evalueid }}
+            </div>
+            <div id="workorderdate">
+                {{ form.workorderdate.errors }}
+                <label id="label_workorderdate">Work Order Date:</label>
+                {{ form.workorderdate }}
+            </div>
+            <div id="eyedon">
+                {{ form.eyedominace.errors }}
+                <label id="label_eyedominace">Eye Dominace</label>
+                {{ form.eyedominace }}
+            </div>
+        <div id="exist">
+            <h6 id="exittext" >Existing Dimensions</h6>
+            <div id="exhand">
+                {{ form.exhand.errors }}
+                <label id="label_exhand">Hand</label>
+                {{ form.exhand }}
+            </div>
+            <div id="exlop">
+                {{ form.exlop.errors }}
+                <label id="label_exlop">LOP</label>
+                {{ form.exlop }}
+            </div>
+            <div id="exdac">
+                {{ form.exdac.errors }}
+                <label id="label_exdac">Drop at Comb</label>
+                {{ form.exdac }}
+            </div>
+            <div id="exdaf">
+                {{ form.exdaf.errors }}
+                <label id="label_exdaf">Drop at Face</label>
+                {{ form.exdaf }}
+            </div>
+            <div id="exdah">
+                {{ form.exdah.errors }}
+                <label id="label_exdah">Drop at Heal</label>
+                {{ form.exdah }}
+            </div>
+            <div id="exdamc">
+                {{ form.exdamc.errors }}
+                <label id="label_exdamc">Drop at Monte Carlo</label>
+                {{ form.exdamc }}
+            </div>
+            <div id="excast">
+                {{ form.excast.errors }}
+                <label id="label_excast">Cast</label>
+                {{ form.excast }}
+            </div>
+            <div id="exlotp">
+                {{ form.exlotp.errors }}
+                <label id="label_exlotp">Length of Tripper Pull</label>
+                {{ form.exlotp }}
+            </div>
+            <div id="extoeout">
+                {{ form.extoeout.errors }}
+                <label id="label_extoeout">Toe Out</label>
+                {{ form.extoeout }}
+            </div>
+            <div id="expitch">
+                {{ form.expitch.errors }}
+                <label id="label_expitch">Pitch</label>
+                {{ form.expitch }}
+            </div>
+        </div>
+        <div id="new">
+            <h6 id="newtext" >New Dimensions</h6>
+            <div id="newhand">
+                {{ form.newhand.errors }}
+                <label id="label_newhand">Hand</label>
+                {{ form.newhand }}
+            </div>
+            <div id="newlop">
+                {{ form.newlop.errors }}
+                <label id="label_newlop">LOP</label>
+                {{ form.newlop }}
+            </div>
+            <div id="newdac">
+                {{ form.newdac.errors }}
+                <label id="label_newdac">Drop at Comb</label>
+                {{ form.newdac }}
+            </div>
+            <div id="newdaf">
+                {{ form.newdaf.errors }}
+                <label id="label_newdaf">Drop at Face</label>
+                {{ form.newdaf }}
+            </div>
+            <div id="newdah">
+                {{ form.newdah.errors }}
+                <label id="label_newdah">Drop at Heal</label>
+                {{ form.newdah }}
+            </div>
+            <div id="newdamc">
+                {{ form.newdamc.errors }}
+                <label id="label_newdamc">Drop at Monte Carlo</label>
+                {{ form.newdamc }}
+            </div>
+            <div id="newcast">
+                {{ form.newcast.errors }}
+                <label id="label_newcast">Cast</label>
+                {{ form.newcast }}
+            </div>
+            <div id="newlotp">
+                {{ form.newlotp.errors }}
+                <label id="label_newlotp">Length of Trigger Pull</label>
+                {{ form.newlotp }}
+            </div>
+            <div id="newtoeout">
+                {{ form.newtoeout.errors }}
+                <label id="label_newtoeout">Toe Out</label>
+                {{ form.newtoeout }}
+            </div>
+            <div id="newpitch">
+                {{ form.newpitch.errors }}
+                <label id="label_newpitch">Pitch</label>
+                {{ form.newpitch }}
+            </div>
+        </div>
+        <div id="select">
+            <div id="cor1">
+                {{ form.cor1.errors }}
+                {{ form.cor1 }}
+            </div>
+            <div id="cor2">
+                {{ form.cor2.errors }}
+                {{ form.cor2 }}
+            </div>
+            <div id="cor3">
+                {{ form.cor3.errors }}
+                {{ form.cor3 }}
+            </div>
+            <div id="cor4">
+                {{ form.cor4.errors }}
+                {{ form.cor4 }}
+            </div>
+            <div id="cor5">
+                {{ form.cor5.errors }}
+                {{ form.cor5 }}
+            </div>
+            <div id="cor6">
+                {{ form.cor6.errors }}
+                {{ form.cor6 }}
+            </div>
+            <div id="cor7">
+                {{ form.cor7.errors }}
+                {{ form.cor7 }}
+            </div>
+            <div id="cor8">
+                {{ form.cor8.errors }}
+                {{ form.cor8 }}
+            </div>
+            <div id="cor9">
+                {{ form.cor9.errors }}
+                {{ form.cor9 }}
+            </div>
+            <div id="cor10">
+                {{ form.cor10.errors }}
+                <label id="label_cor10"></label>
+                {{ form.cor10 }}
+            </div>
+            <div id="cor11">
+                {{ form.cor11.errors }}
+                <label id="label_cor11"></label>
+                {{ form.cor11 }}
+            </div>
+            <div id="notes">
+                {{ form.notes.errors }}
+                <label id="label_notes">Notes</label>
+                {{ form.notes }}
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+            <div class="fieldWrapper" id="col2">
+            </div>
+    </form>
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+
+</script>
+{% endblock %}
