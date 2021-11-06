@@ -1,0 +1,154 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+
+
+/* Work Area */
+
+section#workarea1{
+    width: 1903px;
+    height:750px;
+    display:inline-block;
+
+}
+
+input#id_matdescrip {
+    width:555px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matmanufacturer {
+    width:196px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matvendor {
+    width:200px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_mattype {
+    width:555px;
+    height:33px;
+    text-align: center;
+}
+
+select#id_matunitprice_1 {
+    display:none;
+}
+
+input#id_matvendor {
+    width:200px;
+}
+
+input#id_mattype {
+    width:555px;
+}
+
+label{
+    width:141px;
+    text-align:right;
+    padding-right:0px;
+    margin:10px;
+    margin-right:3px;
+
+    color:#000000;
+
+}
+
+
+
+#btn1{
+    margin-left: 157px;
+    margin-top:30px;
+    width: 557px;
+    height: 50px;
+
+}
+
+/* Section 2 */
+
+form#form2{
+    width: 770px;
+    height:320px;
+    background:#a9a9a9;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 10px;
+     font-weight:bold;
+
+}
+
+h1#formh2{
+    width: 843px;
+    background:#a9a9a9;
+     font-weight:bold;
+     text-align:center;
+     margin-top:45px;
+     margin-bottom:45px;
+}
+
+#section2{
+    width:850px;
+    height:370px;
+    background:#a9a9a9;
+     border:#e8491d 3px solid;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* Media Queries */
+
+@media screen and (max-width:375px){
+
+}
+
+@media screen and (max-width:566px) and (min-width:376px){
+
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+
+}
+
+@media screen and (max-width:810px) and (min-width:681px){
+
+}
+
+@media screen and (max-width:1080px) and (min-width:811px){
+
+}
+
+@media screen and (max-width:1366px) and (min-width:1081px){
+
+section#workarea1{
+    width: 1340px;
+    height:750px;
+    display:inline-block;
+
+}
+
+#section2{
+    width:850px;
+    height:370px;
+    background:#a9a9a9;
+     border:#e8491d 3px solid;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
+}
