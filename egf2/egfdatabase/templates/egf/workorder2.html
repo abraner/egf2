@@ -1,0 +1,162 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>HVAC Bidding|Edit Cust. Info</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<link rel="stylesheet" href="../../../static/login/workorder.css">
+<section id="workarea1">
+    <h1 id="formh2">Work Order</h1>
+    <form method="post" id="form2">
+        {% csrf_token %}
+        {{ form.name_of_field }}
+            <div class="fieldWrapper" id="col1">
+                <div id="workorderdate">
+                    {{ form.workorderdate.errors }}
+                    <label id="label_workorderdate">Work Order Date</label>
+                    {{ form.workorderdate }}
+                </div>
+                <div id="workorder">
+                    {{ form.workorder.errors }}
+                    <label id="label_workorder">Work Order ID</label>
+                    {{ form.workorder }}
+                </div>
+                <div id="gunid">
+                    {{ form.gunid.errors }}
+                    <label id="label_gunid">Gun ID</label>
+                    {{ form.gunid }}
+                </div>
+                <div id="custid">
+                    {{ form.custid.errors }}
+                    <label id="label_custid">Cust ID</label>
+                    {{ form.custid }}
+                 </div>
+                <div id="duplicating">
+                    {{ form.duplicating.errors }}
+                    <label id="label_duplicating">Duplicating</label>
+                    {{ form.duplicating }}
+                </div>
+                <div id="fittingtime">
+                    {{ form.fittingtime.errors }}
+                    <label id="label_fittingtime">Fitting Time</label>
+                    {{ form.fittingtime }}
+                </div>
+                <div id="fittingstock">
+                    {{ form.fittingstock.errors }}
+                    <label id="label_fittingstock">Fitting Stock</label>
+                    {{ form.fittingstock }}
+                </div>
+                <div id="refinishing">
+                    {{ form.refinishing.errors }}
+                    <label id="label_refinishing">Refinishing</label>
+                    {{ form.refinishing}}
+                </div>
+                <div id="finishtype">
+                    {{ form.finishtype.errors }}
+                    <label id="label_finishtype">Finish Type</label>
+                    {{ form.finishtype}}
+                </div>
+                <div id="recoilpad">
+                    {{ form.recoilpad.errors }}
+                    <label id="label_recoilpad">Recoil Pad</label>
+                    {{ form.recoilpad }}
+                </div>
+                <div id="recoilpadman">
+                    {{ recoilpadman.errors }}
+                    <label id="label_recoilpadman">Recoil Pad Manufacturer</label>
+                    {{ recoilpadman }}
+                </div>
+                <div id="recoilpadstyle">
+                    {{ recoilpadstyle.errors }}
+                    <label id="label_recoilpadstyle">Recoil Pad Style</label>
+                    {{ recoilpadstyle }}
+                </div>
+                <div id="recoilpadnumber">
+                    {{ recoilpadnumber.errors }}
+                    <label id="label_recoilpadnumber">Recoil Pad Number</label>
+                    {{ recoilpadnumber}}
+                </div>
+                <div id="stockmod1">
+                    {{ form.stockmod1.errors }}
+                    <label id="label_stockmod1">Stock Mod</label>
+                    {{ form.stockmod1 }}
+                </div>
+                <div id="stockmod2">
+                    {{ form.stockmod2.errors }}
+                    <label id="label_stockmod2">Stock Mod</label>
+                    {{ form.stockmod2}}
+                </div>
+                <div id="stockmod3">
+                    {{ form.stockmod3.errors }}
+                    <label id="label_stockmod3">Stock Mod</label>
+                    {{ form.stockmod3 }}
+                </div>
+                <div id="stockrepairtype">
+                    {{ form.stockrepairtype.errors }}
+                    <label id="label_stockrepairtype">Stock Repair Type</label>
+                    {{ form.stockrepairtype }}
+                </div>
+                <div id="stockrepair">
+                    {{ form.stockrepair.errors }}
+                    <label id="label_stockrepair">Repair Time</label>
+                    {{ form.stockrepair}}
+                </div>
+                <div id="checkering">
+                    {{ form.checkering.errors }}
+                    <label id="label_checkering">Checkering</label>
+                    {{ form.checkering}}
+                </div>
+                <div id="wood'">
+                    {{ form.wood.errors }}
+                    <label id="label_wood">Wood</label>
+                    {{ form.wood }}
+                </div>
+
+
+
+
+
+                <div id="description5">
+                    {{ form.description5.errors }}
+                    <label id="label_description5">Service 5</label>
+                    {{ form.description5}}
+                </div>
+                <div id="labor5">
+                    {{ form.labor5.errors }}
+                    <label id="label_labor5">labor 5</label>
+                    {{ form.labor5}}
+                </div>
+                <div id="retailmaterialcost5">
+                    {{ form.retailmaterialcost5.errors }}
+                    <label id="label_retailmaterialcost5">Retail Mat. Cost 5</label>
+                    {{ form.retailmaterialcost5 }}
+                </div>
+                <div id="wholesalecost5">
+                    {{ form.wholesalecost5.errors }}
+                    <label id="label_wholesalecost5">wholesalecost 5</label>
+                    {{ form.wholesalecost5}}
+                </div>
+                <div id="notes">
+                    {{ form.notes.errors }}
+                    <label id="label_notes">notes</label>
+                    {{ form.notes }}
+                </div>
+                <div id="proposaltype">
+                    {{ form.proposaltype.errors }}
+                    <label id="label_proposaltype">Proposal Type</label>
+                    {{ form.proposaltype }}
+                </div>
+            </div>
+            <button id="btn1" type="submit" class="btn-success">Price Work Order</button>
+    </form>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+
+
+
+</script>
+{% endblock %}
