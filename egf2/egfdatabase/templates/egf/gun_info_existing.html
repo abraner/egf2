@@ -1,0 +1,54 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>EGF Bidding|Search Gun Info.</title>
+{% endblock %}
+
+{% block body %}
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../static/login/gun_info_existing.css">
+<section id="workarea1">
+    <section id="section1">
+
+        <h1 id="formh1">Gun Search</h1>
+
+        <div id="menu2">
+            <div id="header1">
+                <div id="A">Gun ID</div>
+                <div id="F">Cust. ID</div>
+                <div id="B">Manufacturer</div>
+                <div id="C">Model</div>
+                <div id="D">Serial Number</div>
+                <div id="E">Gauge</div>
+            </div>
+            <section id="sec1"></section>
+            <section id="sec2"></section>
+            <section id="sec3"></section>
+            <section id="sec4"></section>
+            <section id="sec5"></section>
+            <section id="sec6"></section>
+            <section id="sec7"></section>
+            <section id="sec8"></section>
+            <section id="sec9"></section>
+            <section id="sec10"></section>
+        </div>
+        <section id="sectionA" >
+            <form id="form1" method="post">
+                {% csrf_token %}
+                {% for obj in object_list %}
+                <div id="custid">{{ obj.id }}</div>
+                <a id="gunid" href="{{ obj.get_absolute4_url }}">{{ obj.gun_id }}</a>
+                <div id="gunman">{{ obj.gunmanufacturer }}</div>
+                <div id="gunmodel">{{ obj.gunmodel }}</div>
+                <div id="gunnum">{{ obj.gunserialnumber }}</div>
+                <div id="gunguage">{{ obj.gungauge }}</div>
+                {% endfor %}
+            </form>
+
+        </section>
+
+
+        <hr>
+    </section>
+</section>
+{% endblock %}
