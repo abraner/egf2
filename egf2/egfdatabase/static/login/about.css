@@ -1,5 +1,5 @@
 #main{
-  min-height:800px;
+  min-height:829px;
   background:#35424a;
   text-align:center;
   color:#e8491d;
@@ -75,7 +75,7 @@ img#img2{
 
 img#img3{
     width:200px;
-    height: 150px:
+    height: 150px;
     margin-left:0px;
     margin-right:70px;
     margin-top:18px;
@@ -120,4 +120,748 @@ img#img6{
     margin-top:18px;
     padding-left:0px;
     float: right;
+}
+
+footer{
+  width:1920px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:1920px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+
+/* Media Queries Iphone 10  */
+@media screen and (max-width:375px){
+
+#main{
+  width:375px;
+  height:812px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+div#title{
+    font-size:23px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:5px;
+}
+
+div#article1{
+    width:375px;
+    height:812px;
+    margin-left:406px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+ div#articletop{
+    width:335px;
+    height:812px;
+    margin-left:-381px;
+    margin-right:0px;
+    margin-top:26px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:14px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img1{
+    display:none;
+}
+
+img#img2{
+    display:none;
+}
+
+img#img3{
+    display:none;
+}
+
+div#articlebottom{
+    width:335px;
+    height:812px;
+    margin-left:-381px;
+    margin-right:0px;
+    margin-top:-671px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:14px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img4{
+    display:none;
+}
+
+img#img5{
+    display:none;
+}
+
+img#img6{
+    display:none;
+}
+
+footer{
+  width:375px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:6px;
+}
+
+p#footer{
+  width:316px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:6px;
+}
+
+
+}
+
+/* Media Queries Iphone 10 Sideways */
+@media screen and (max-width:566px) and (min-width:376px){
+
+
+#main{
+  width:812px;
+  height:1140px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+div#title{
+    font-size:42px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:5px;
+}
+
+div#article1{
+    width:813px;
+    height:812px;
+    margin-left:0px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+ div#articletop{
+    width:781px;
+    height:200px;
+    margin-left:22px;
+    margin-right:0px;
+    margin-top:1px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:22px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img1{
+    width:150px;
+    height: 121px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:17px;
+    float: left;
+}
+
+img#img2{
+    width:150px;
+    height: 121px;
+    margin-left:111px;
+    margin-right:0px;
+    margin-top:17px;
+}
+
+img#img3{
+    width:150px;
+    height: 121px;
+    margin-left:0px;
+    margin-right:70px;
+    margin-top:15px;
+    padding-left:0px;
+    float: right;
+}
+
+div#articlebottom{
+    width:781px;
+    height:545px;
+    margin-left:22px;
+    margin-right:0px;
+    margin-top:15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:21px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img4{
+    width:150px;
+    height: 121px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:17px;
+    float: left;
+}
+
+img#img5{
+    width:150px;
+    height: 121px;
+    margin-left:111px;
+    margin-right:0px;
+    margin-top:17px;
+}
+
+img#img6{
+    width:150px;
+    height: 121px;
+    margin-left:0px;
+    margin-right:70px;
+    margin-top:16px;
+    padding-left:0px;
+    float: right;
+}
+
+footer{
+  width:812px;
+  height: 35px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:6px;
+}
+
+p{
+  width:804px;
+  height: 15px;
+  padding:4px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:16px;
+}
+
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+
+#main{
+  width:1080px;
+  height:948px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+div#title{
+    font-size:38px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:5px;
+}
+
+div#article1{
+    width:1080px;
+    height:812px;
+    margin-left:0px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+ div#articletop{
+    width:998px;
+    height:102px;
+    margin-left:29px;
+    margin-right:0px;
+    margin-top:10px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img1{
+    width:200px;
+    height: 150px;
+    margin-left:66px;
+    margin-right:0px;
+    margin-top:11px;
+    float: left;
+}
+
+img#img2{
+    width:200px;
+    height: 150px;
+    margin-left:174px;
+    margin-right:0px;
+    margin-top:10px;
+}
+
+img#img3{
+    width:200px;
+    height: 150px;
+    margin-left:0px;
+    margin-right:70px;
+    margin-top:9px;
+    padding-left:0px;
+    float: right;
+}
+
+div#articlebottom{
+    width:998px;
+    height:252px;
+    margin-left:29px;
+    margin-right:0px;
+    margin-top:15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img4{
+    width:200px;
+    height: 150px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:25px;
+    float: left;
+}
+
+img#img5{
+    width:200px;
+    height: 150px;
+    margin-left:170px;
+    margin-right:0px;
+    margin-top:25px;
+}
+
+img#img6{
+    width:228px;
+    margin-right:70px;
+    margin-top:25px;
+    padding-left:0px;
+    float: right;
+}
+
+footer{
+  width:1080px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:1080px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+}
+@media screen and (max-width:810px) and (min-width:681px){
+
+#main{
+    width:797px;
+    height:900px;
+}
+
+div#article1{
+    width:730px;
+    height:851px;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+div#articletop{
+    width:702px;
+    margin-left:19px;
+}
+
+
+img#img1{
+    width:150px;
+    height: 100px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:18px;
+    float: left;
+}
+
+img#img2{
+    width:150px;
+    height: 100px;
+    margin-left:104px;
+    margin-right:0px;
+    margin-top:18px;
+}
+
+img#img3{
+    width:150px;
+    height: 100px;
+    margin-left:0px;
+    margin-right:10px;
+    margin-top:18px;
+    padding-left:0px;
+    float: right;
+}
+
+
+div#articlebottom{
+    width:702px;
+    margin-left:19px;
+}
+
+img#img4{
+    width:150px;
+    height: 100px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:18px;
+    float: left;
+}
+
+img#img5{
+    width:150px;
+    height: 100px;
+    margin-left:104px;
+    margin-right:0px;
+    margin-top:18px;
+}
+
+img#img6{
+    width:150px;
+    height: 100px;
+    margin-right:10px;
+    margin-top:18px;
+    padding-left:0px;
+    float: right;
+}
+
+footer{
+  width:797px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:797px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+
+}
+
+
+@media screen and (max-width:1080px) and (min-width:811px){
+div#title{
+   font-size:50px;
+}
+
+#main{
+    width:1024px;
+    height:840px;
+}
+
+div#article1{
+    width:954px;
+    height:812px;
+    margin-left:42px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+ div#articletop{
+    width:890px;
+    height:102px;
+    margin-left:29px;
+    margin-right:0px;
+    margin-top:10px;
+}
+
+div#articlebottom{
+    width:890px;
+    height:314px;
+    margin-left:22px;
+    margin-right:0px;
+    margin-top:15px;
+}
+
+img#img1{
+    width:150px;
+    height: 100px;
+    margin-left:29px;
+}
+
+img#img2{
+    width:150px;
+    height: 100px;
+    margin-left:196px;
+}
+
+img#img3{
+    width:150px;
+    height: 100px;
+    margin-left:0px;
+    margin-right:56px;
+}
+
+img#img4{
+    width:150px;
+    height: 100px;
+    margin-left:30px;
+}
+
+img#img5{
+    width:150px;
+    height: 100px;
+    margin-left:195px;
+}
+
+img#img6{
+    width:150px;
+    height: 100px;
+    margin-right:56px;
+}
+
+footer{
+  width:1024px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:1024px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+}
+
+
+@media screen and (max-width:1366px) and (min-width:1081px){
+
+#main{
+  width:1348px;
+  height:800px;
+  background:#35424a;
+  text-align:center;
+}
+
+div#title{
+    font-size:38px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+}
+
+div#article1{
+    width:1280px;
+    height:761px;
+    margin-left:45px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+ div#articletop{
+    width:1239px;
+    height:116px;
+    margin-left:18px;
+    margin-right:0px;
+    margin-top:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img1{
+    width:200px;
+    height: 150px;
+    margin-left:66px;
+    margin-right:0px;
+    margin-top:0px;
+    float: left;
+}
+
+img#img2{
+    width:200px;
+    height: 150px;
+    margin-left:270px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+img#img3{
+    width:200px;
+    height: 150px;
+    margin-left:0px;
+    margin-right:70px;
+    margin-top:0px;
+    padding-left:0px;
+    float: right;
+}
+
+div#articlebottom{
+    width:1239px;
+    height:116px;
+    margin-left:18px;
+    margin-right:0px;
+    margin-top:44px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:17px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+img#img4{
+    width:200px;
+    height: 150px;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:144px;
+    float: left;
+}
+
+img#img5{
+    width:200px;
+    height: 150px;
+    margin-left:270px;
+    margin-right:0px;
+    margin-top:144px;
+}
+
+img#img6{
+    width:228px;
+    margin-right:70px;
+    margin-top:144px;
+    padding-left:0px;
+    float: right;
+}
+
+footer{
+  width:1365px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:1365px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
 }
