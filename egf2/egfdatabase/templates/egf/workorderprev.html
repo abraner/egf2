@@ -1,0 +1,222 @@
+{% extends 'home.html' %}
+<h1>EGF Bidding Program</h1>
+{% block head %}
+<title>HEGF Bidding|Edit Cust. Info</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<link rel="stylesheet" href="../../../static/login/workorderprev5.css">
+ <a id="back"  href="{% url 'egfdatabase:guninfo' instance.gunid %}">Back Button</a>
+ <a id="pdf"  href="">Save as PDF</a>
+ <a id="emailpdf"  href="">Email PDF</a>
+<section id="workarea1">
+    <h1 id="formh2">Work Order</h1>
+    <form method="post" id="form2">
+        {% csrf_token %}
+        {{ form.name_of_field }}
+            <div class="fieldWrapper" id="col1">
+                <div id="workorderdate">
+                    {{ form.workorderdate.errors }}
+                    <label id="label_workorderdate">Work Order Date</label>
+                    {{ form.workorderdate }}
+                </div>
+                <div id="workorder">
+                    {{ form.workorder.errors }}
+                    <label id="label_workorder">Work Order ID</label>
+                    {{ form.workorder }}
+                </div>
+                <div id="gunid">
+                    {{ form.gunid.errors }}
+                    <label id="label_gunid">Gun ID</label>
+                    {{ form.gunid }}
+                </div>
+                <div id="custid">
+                    {{ form.custid.errors }}
+                    <label id="label_custid">Cust ID</label>
+                    {{ form.custid }}
+                 </div>
+            </div>
+            <div class="fieldWrapper" id="col2">
+                <div id="duplicating">
+                    {{ form.duplicating.errors }}
+                    <label id="label_duplicating">Duplicating</label>
+                    {{ form.duplicating }}
+                </div>
+                <div id="fittingtime">
+                    {{ form.fittingtime.errors }}
+                    <label id="label_fittingtime">Fitting Time</label>
+                    {{ form.fittingtime }}
+                </div>
+                <div id="fittingstock">
+                    {{ form.fittingstock.errors }}
+                    <label id="label_fittingstock">Fitting Stock</label>
+                    {{ form.fittingstock }}
+                </div>
+                <div id="refinishing">
+                    {{ form.refinishing.errors }}
+                    <label id="label_refinishing">Refinishing</label>
+                    {{ form.refinishing}}
+                </div>
+                <div id="finishtype">
+                    {{ form.finishtype.errors }}
+                    <label id="label_finishtype">Finish Type</label>
+                    {{ form.finishtype}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col3">
+                <div id="recoilpad">
+                    {{ form.recoilpad.errors }}
+                    <label id="label_recoilpad">Recoil Pad</label>
+                    {{ form.recoilpad }}
+                </div>
+                <div id="recoilpadman">
+                    {{ recoilpadman.errors }}
+                    <label id="label_recoilpadman">Manufacturer</label>
+                    {{ recoilpadman }}
+                </div>
+                <div id="recoilpadstyle">
+                    {{ recoilpadstyle.errors }}
+                    <label id="label_recoilpadstyle">Style</label>
+                    {{ recoilpadstyle }}
+                </div>
+                <div id="recoilpadnumber">
+                    {{ recoilpadnumber.errors }}
+                    <label id="label_recoilpadnumber">Number</label>
+                    {{ recoilpadnumber}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col4">
+                <div id="stockmod1">
+                    {{ form.stockmod1.errors }}
+                    <div id="label4">
+                        <label id="label_stockmod1">Stock Modification</label>
+                    </div>
+                    {{ form.stockmod1 }}
+                </div>
+                <div id="stockmod2">
+                    {{ form.stockmod2.errors }}
+                    <label id="label_stockmod2"></label>
+                    {{ form.stockmod2}}
+                </div>
+                <div id="stockmod3">
+                    {{ form.stockmod3.errors }}
+                    <label id="label_stockmod3"></label>
+                    {{ form.stockmod3 }}
+                </div>
+                <div id="stockrepairtype">
+                    {{ form.stockrepairtype.errors }}
+                    <label id="label_stockrepairtype">Stock Repair</label>
+                    {{ form.stockrepairtype }}
+                </div>
+                <div id="stockrepair">
+                    {{ form.stockrepair.errors }}
+                    <label id="label_stockrepair">Repair Time</label>
+                    {{ form.stockrepair}}
+                </div>
+                <div id="checkering">
+                    {{ form.checkering.errors }}
+                    <label id="label_checkering">Checkering</label>
+                    {{ form.checkering}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col5">
+                <div id="description1">
+                    {{ form.description1.errors }}
+                    <div id="label1">
+                        <label id="label_description1">Miscellaneous Service</label>
+                    </div>
+                    {{ form.description1}}
+                </div>
+                <div id="labor1">
+                    {{ form.labor1.errors }}
+                    <div id="label2">
+                        <label id="label_labor1">labor</label>
+                    </div>
+                    {{ form.labor1}}
+                </div>
+                <div id="retailmaterialcost1">
+                    {{ form.retailmaterialcost1.errors }}
+                    <div id="label3">
+                        <label id="label_retailmaterialcost1">Mat. Cost</label>
+                    </div>
+                    {{ form.retailmaterialcost1 }}
+                </div>
+                <div id="description2">
+                    {{ form.description2.errors }}
+                    <label id="label_description2"></label>
+                    {{ form.description2}}
+                </div>
+                <div id="labor2">
+                    {{ form.labor2.errors }}
+                    <label id="label_labor2"></label>
+                    {{ form.labor2}}
+                </div>
+                <div id="retailmaterialcost2">
+                    {{ form.retailmaterialcost2.errors }}
+                    <label id="label_retailmaterialcost2"></label>
+                    {{ form.retailmaterialcost2 }}
+                </div>
+                <div id="description3">
+                    {{ form.description3.errors }}
+                    <label id="label_description3"></label>
+                    {{ form.description3}}
+                </div>
+                <div id="labor3">
+                    {{ form.labor3.errors }}
+                    <label id="label_labor3"></label>
+                    {{ form.labor3}}
+                </div>
+                <div id="retailmaterialcost3">
+                    {{ form.retailmaterialcost3.errors }}
+                    <label id="label_retailmaterialcost3"></label>
+                    {{ form.retailmaterialcost3 }}
+                </div>
+                <div id="description4">
+                    {{ form.description4.errors }}
+                    <label id="label_description4"></label>
+                    {{ form.description4}}
+                </div>
+                <div id="labor4">
+                    {{ form.labor4.errors }}
+                    <label id="label_labor4"></label>
+                    {{ form.labor4}}
+                </div>
+                <div id="retailmaterialcost4">
+                    {{ form.retailmaterialcost4.errors }}
+                    <label id="label_retailmaterialcost4"></label>
+                    {{ form.retailmaterialcost4 }}
+                </div>
+                <div id="description5">
+                    {{ form.description5.errors }}
+                    <label id="label_description5"></label>
+                    {{ form.description5}}
+                </div>
+                <div id="labor5">
+                    {{ form.labor5.errors }}
+                    <label id="label_labor5"></label>
+                    {{ form.labor5}}
+                </div>
+                <div id="retailmaterialcost5">
+                    {{ form.retailmaterialcost5.errors }}
+                    <label id="label_retailmaterialcost5"></label>
+                    {{ form.retailmaterialcost5 }}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col6">
+                <div id="notes">
+                    {{ form.notes.errors }}
+                    <label id="label_notes">notes</label>
+                    {{ form.notes }}
+                </div>
+                <div id="proposaltype">
+                    {{ form.proposaltype.errors }}
+                    <label id="label_proposaltype">Proposal Type</label>
+                    {{ form.proposaltype }}
+                </div>
+            </div>
+
+
+    </form>
+</section>
+{% endblock %}
