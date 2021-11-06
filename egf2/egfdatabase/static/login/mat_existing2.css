@@ -1,0 +1,343 @@
+/* Global */
+body{
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+/* Work Area */
+section#workarea1{
+    width: 1903px;
+    height:750px;
+    display:inline-block;
+
+
+}
+
+form#form1{
+    height:637px;
+    width:1231px;
+    margin-left:26px;
+    border: 2px solid #e8491d;
+}
+
+h1#formh1{
+    height:50px;
+    text-align:center;
+    margin:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh2{
+    text-align:center;
+    margin:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+
+h1#formh3{
+    text-align:center;
+    margin-bottom:10px;
+    color:#e8491d;
+    font-weight:bold;
+}
+#col1.fieldWrapper{
+    height:100px;
+    width:950px;
+   margin-left:500px;
+
+}
+
+#label_id{
+    width:100px;
+    text-align:center;
+    color:#e8491d;
+    padding-bottom:10px;
+}
+
+section#sec1, section#sec3, section#sec5, section#sec7, section#sec9, section#sec11, section#sec13{
+    width:1227px;
+    height:45px;
+    margin-left:2px;
+    background:#9A8D85;
+}
+
+section#sec2, section#sec4, section#sec6, section#sec8, section#sec10, section#sec12{
+    width:1227px;
+    height:45px;
+    margin-left:2px;
+    background:#a9a9a9;
+}
+
+div#menu2 {
+    float:left;
+    height:50px;
+    width:1226px;
+    margin-left:352px;
+    display:inline;
+
+}
+div#header1{
+    width:1227px;
+    height:50px;
+}
+div#A{
+    width:72px;
+    height:50px;
+    text-align:center;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#B{
+    width:274px;
+    height:50px;
+    text-align:center;
+    margin-left:50px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#C{
+    width:766px;
+    height:50px;
+    text-align:center;
+    margin-left:72px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#D{
+    width:131px;
+    height:50px;
+    text-align:center;
+    margin-left:837px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#E{
+    width:131px;
+    height:50px;
+    text-align:center;
+    margin-left:967px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:-3px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#G{
+    width:131px;
+    height:50px;
+    text-align:center;
+    margin-left:1098px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#H{
+    width:80px;
+    height:50px;
+    text-align:center;
+    margin-left:999px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#I{
+    width:150px;
+    height:50px;
+    text-align:center;
+    margin-left:1079px;
+    margin-top:-50px;
+    color:#e8491d;
+    font-weight:bold;
+    padding-top:12px;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#guninfo{
+    background-color: tan;
+    width:950px;
+    height:60px;
+    font-size: 30px;
+    color:#e8491d;
+
+}
+
+A#id{
+    color:blue;
+    display:inline-block;
+    width:70px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+
+div#company{
+    display:inline-block;
+    width:274px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#description{
+    display:inline-block;
+    width:766px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#labor{
+    display:inline-block;
+    width:130px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#wholesale{
+    display:inline-block;
+    width:130px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#retail{
+    display:inline-block;
+    width:130px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#st{
+    display:inline-block;
+    width:80px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-right: 2px solid #e8491d;
+    border-bottom: 2px solid #e8491d;
+}
+
+div#zipcode{
+    display:inline-block;
+    width:150px;
+    height:45px;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    margin-left:-5px;
+    border-bottom: 2px solid #e8491d;
+}
+
+#searchbar{
+    margin-left:800px;
+    width:300px;
+    padding-top:38px;
+
+}
+
+div#pag{
+    margin-left:548px;
+    padding-top:10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:375px){
+
+}
+
+@media screen and (max-width:566px) and (min-width:376px){
+
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+
+}
+
+@media screen and (max-width:810px) and (min-width:681px){
+
+}
+
+@media screen and (max-width:1080px) and (min-width:811px){
+
+}
+
+@media screen and (max-width:1366px) and (min-width:1081px){
+
+    form#form1{
+    margin-left:26px;
+}
+
+div#menu2 {
+    margin-left:26px;
+}
+
+h1#formh1{
+    margin-left:-530px;
+}
+
+#searchbar{
+    margin-left:583px;
+}
+
+
+}
