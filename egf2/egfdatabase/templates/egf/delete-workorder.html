@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+<h1>Delete Work Order</h1>
+{% block head %}
+<title>Delete Work Order</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="../../../../static/login/delete-workorder.css">
+<form action="." method="POST">{% csrf_token %}
+        <h1>Do you want to Delete Work Order "{{ object.workorderid }}"?</h1>
+
+        <button id="btn1" type="submit" class="btn-success">Yes</button>
+
+
+
+        <a id="cancel" href="../../../">Cancel</a>
+</form>
+{% endblock %}
