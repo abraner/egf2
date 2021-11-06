@@ -1,0 +1,103 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>EGF Bidding|Edit Cust. Info</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="../../../static/login/new_gun1.css">
+        <section id="workarea1">
+            <form id="form2" method="post">
+                <h1 id="formh2">Add New Gun</h1>
+                <br>
+                {% csrf_token %}
+                {{ form.name_of_field }}
+                <div class="fieldWrapper" id="col1">
+                    <div id="id">
+                        {{ form.id.errors }}
+                        <label id="label_id">Cust. ID</label>
+                        {{ form.id }}
+                    </div>
+                    <div id="gunid">
+                        {{ form.gunid.errors }}
+                        <label id="label_gunid">Gun ID</label>
+                        {{ form.gunid }}
+                    </div>
+                    <div id="gunman">
+                        {{ form.gunmanufacturer.errors }}
+                        <label id="label_gunmanufacturer">Gun Manufacturer</label>
+                        {{ form.gunmanufacturer }}
+                    </div>
+                    <div id="gunmodel">
+                        {{ form.gunmodel.errors }}
+                        <label id="label_gunmodel">Gun Model</label>
+                        {{ form.gunmodel }}
+                    </div>
+                    <div id="gunnum">
+                        {{ form.gunserialnumber.errors }}
+                        <label id="label_gunserialnumber">Serial Number</label>
+                        {{ form.gunserialnumber }}
+                    </div>
+                    <div id="gunguage">
+                        {{ form.gunguage.errors }}
+                        <label id="label_gunguage">Gauge</label>
+                        {{ form.gungauge }}
+                    </div>
+                </div>
+                <h1 id="formh3">Stock Dimensions</h1>
+                <div class="fieldWrapper" id="col2">
+                    <div id="hand">
+                        {{ form.hand.errors }}
+                        <label id="label_hand">Hand</label>
+                        {{ form.hand}}
+                    </div>
+                    <div id="lop">
+                        {{ form.lop.errors }}
+                        <label id="label_lop">LOP</label>
+                        {{ form.lop }}
+                    </div>
+                    <div id="comb">
+                        {{ form.comb.errors }}
+                        <label id="label_comb">Comb</label>
+                        {{ form.comb }}
+                    </div>
+                    <div id="face">
+                        {{ form.face.errors }}
+                        <label id="label_face">Face</label>
+                        {{ form.face}}
+                    </div>
+                    <div id="heel">
+                        {{ form.heel.errors }}
+                        <label id="label_heel">Heel</label>
+                        {{ form.heel }}
+                    </div>
+                    <div id="montecarlo">
+                        {{ form.montecarlo.errors }}
+                        <label id="label_montecarlo">Monte Carlo</label>
+                        {{ form.montecarlo}}
+                    </div>
+                    <div id="cast">
+                        {{ form.cast.errors }}
+                        <label id="label_cast">Cast</label>
+                        {{ form.cast }}
+                    </div>
+                    <div id="toe">
+                        {{ form.toe.errors }}
+                        <label id="label_toe">Toe</label>
+                        {{ form.toe }}
+                    </div>
+                    <div id="trigger">
+                        {{ form.trigger.errors }}
+                        <label id="label_trigger">Trigger</label>
+                        {{ form.trigger}}
+                    </div>
+                    <div id="pitch">
+                        {{ form.pitch.errors }}
+                        <label id="label_pitch">Pitch</label>
+                        {{ form.pitch }}
+                    </div>
+                </div>
+                <button id="btn1" type="submit" class="btn-success">Add New Gun Information</button>
+            </form>
+        </section>
+{% endblock %}
