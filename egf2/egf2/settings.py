@@ -18,18 +18,20 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t#0aervds+kzjr8c%4rlpl13w&e%q$@kpo6kwvo#c$zoaaezci'
 
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['abraner.pythonanywhere.com', 'www.elitegunfitting.com']
 
 
 # Application definition
@@ -41,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'egfdatabase',
+    'egfdatabase',
+    'phone_field',
+
+
 ]
 
 MIDDLEWARE = [
@@ -80,8 +85,11 @@ WSGI_APPLICATION = 'egf2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'abraner$egf2',
+        'USER': 'abraner',
+        'PASSWORD': 'Alan2Mary',
+        'HOST': 'abraner.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -136,3 +144,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/img/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'egfdatabase/img')
 LOGIN_REDIRECT_URL = '/egfdatabase/home'
+
+# Email Settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'elitegunfitting@gmail.com'
+EMAIL_HOST_PASSWORD = 'pqkxmsnaisxhyrpq'
+EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
