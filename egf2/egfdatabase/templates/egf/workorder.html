@@ -1,0 +1,1840 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>egf Work Order Page</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<link rel="stylesheet" href="../../../static/login/workorder2.css">
+<section id="workarea1">
+    <form method="post" id="form2"
+
+          fittingtime-url="{% url 'egfdatabase:fittime' instance.workorderid %}"
+          fittingtime2-url="{% url 'egfdatabase:fittime2' instance.workorderid %}"
+          fittingtimed-url="{% url 'egfdatabase:delete_fittime' instance.workorderid %}"
+          duplicating-url="{% url 'egfdatabase:duplicating' instance.workorderid %}"
+          duplicating2-url="{% url 'egfdatabase:duplicating2' instance.workorderid %}"
+          duplicatingd-url="{% url 'egfdatabase:delete_duplicating' instance.workorderid %}"
+
+          fittingstock-url="{% url 'egfdatabase:fittingstock' instance.workorderid %}"
+          fittingstock2-url="{% url 'egfdatabase:fittingstock2' instance.workorderid %}"
+          fittingstockd-url="{% url 'egfdatabase:delete_fittingstock' instance.workorderid %}"
+
+          refinishing-url="{% url 'egfdatabase:refinishing' instance.workorderid %}"
+          refinishing2-url="{% url 'egfdatabase:refinishing2' instance.workorderid %}"
+          refinishingd-url="{% url 'egfdatabase:delete_refinishing' instance.workorderid %}"
+
+          finishtype-url="{% url 'egfdatabase:finishtype' instance.workorderid %}"
+          finishtype2-url="{% url 'egfdatabase:finishtype2' instance.workorderid %}"
+          finishtyped-url="{% url 'egfdatabase:delete_finishtype' instance.workorderid %}"
+
+
+          recoilpad-url="{% url 'egfdatabase:recoilpad' instance.workorderid %}"
+          recoilpad2-url="{% url 'egfdatabase:recoilpad2' instance.workorderid %}"
+          recoilpadd-url="{% url 'egfdatabase:delete_recoilpad' instance.workorderid %}"
+
+          recoilpadman-url="{% url 'egfdatabase:recoilpadman' instance.workorderid %}"
+          recoilpadstylea-url="{% url 'egfdatabase:ajax_load_recoilpadstyle' instance.workorderid %}"
+          recoilpadstyle-url="{% url 'egfdatabase:recoilpadstyle' instance.workorderid %}"
+
+          recoilpadnuma-url="{% url 'egfdatabase:ajax_load_recoilpadnum' instance.workorderid %}"
+          recoilpadnum-url="{% url 'egfdatabase:recoilpadnum' instance.workorderid %}"
+          recoilpadnum2-url="{% url 'egfdatabase:recoilpadnum2' instance.workorderid %}"
+          recoilpadnumd-url="{% url 'egfdatabase:delete_recoilpadnum' instance.workorderid %}"
+
+          stockmod1-url="{% url 'egfdatabase:stockmod1' instance.workorderid %}"
+          stockmod12-url="{% url 'egfdatabase:stockmod12' instance.workorderid %}"
+          stockmod1d-url="{% url 'egfdatabase:delete_stockmod1' instance.workorderid %}"
+          stockmod2-url="{% url 'egfdatabase:stockmod2' instance.workorderid %}"
+          stockmod22-url="{% url 'egfdatabase:stockmod22' instance.workorderid %}"
+          stockmod2d-url="{% url 'egfdatabase:delete_stockmod2' instance.workorderid %}"
+          stockmod3-url="{% url 'egfdatabase:stockmod3' instance.workorderid %}"
+          stockmod32-url="{% url 'egfdatabase:stockmod32' instance.workorderid %}"
+          stockmod3d-url="{% url 'egfdatabase:delete_stockmod3' instance.workorderid %}"
+
+          stockrepairtype-url="{% url 'egfdatabase:stockrepairtype' instance.workorderid %}"
+          stockrepairtype2-url="{% url 'egfdatabase:stockrepairtype2' instance.workorderid %}"
+          stockrepairtyped-url="{% url 'egfdatabase:delete_stockrepairtype' instance.workorderid %}"
+
+          stockrepair-url="{% url 'egfdatabase:stockrepair' instance.workorderid %}"
+          stockrepair2-url="{% url 'egfdatabase:stockrepair2' instance.workorderid %}"
+          stockrepaird-url="{% url 'egfdatabase:delete_stockrepair' instance.workorderid %}"
+          checkering-url="{% url 'egfdatabase:checkering' instance.workorderid %}"
+          checkering2-url="{% url 'egfdatabase:checkering2' instance.workorderid %}"
+          checkeringd-url="{% url 'egfdatabase:delete_checkering' instance.workorderid %}"
+          description1-url="{% url 'egfdatabase:description1' instance.workorderid %}"
+          description12-url="{% url 'egfdatabase:description12' instance.workorderid %}"
+          description1d-url="{% url 'egfdatabase:delete_description1' instance.workorderid %}"
+          labor1-url="{% url 'egfdatabase:labor1' instance.workorderid %}"
+          labor12-url="{% url 'egfdatabase:labor12' instance.workorderid %}"
+          retailmaterialcost1-url="{% url 'egfdatabase:retailmaterialcost1' instance.workorderid %}"
+          retailmaterialcost12-url="{% url 'egfdatabase:retailmaterialcost12' instance.workorderid %}"
+          description2-url="{% url 'egfdatabase:description2' instance.workorderid %}"
+          description22-url="{% url 'egfdatabase:description22' instance.workorderid %}"
+          description2d-url="{% url 'egfdatabase:delete_description2' instance.workorderid %}"
+          labor2-url="{% url 'egfdatabase:labor2' instance.workorderid %}"
+          labor22-url="{% url 'egfdatabase:labor22' instance.workorderid %}"
+          retailmaterialcost2-url="{% url 'egfdatabase:retailmaterialcost2' instance.workorderid %}"
+          retailmaterialcost22-url="{% url 'egfdatabase:retailmaterialcost22' instance.workorderid %}"
+          description3-url="{% url 'egfdatabase:description3' instance.workorderid %}"
+          description32-url="{% url 'egfdatabase:description32' instance.workorderid %}"
+          description3d-url="{% url 'egfdatabase:delete_description3' instance.workorderid %}"
+          labor3-url="{% url 'egfdatabase:labor3' instance.workorderid %}"
+          labor32-url="{% url 'egfdatabase:labor32' instance.workorderid %}"
+          retailmaterialcost3-url="{% url 'egfdatabase:retailmaterialcost3' instance.workorderid %}"
+          retailmaterialcost32-url="{% url 'egfdatabase:retailmaterialcost32' instance.workorderid %}"
+          description4-url="{% url 'egfdatabase:description4' instance.workorderid %}"
+          description42-url="{% url 'egfdatabase:description42' instance.workorderid %}"
+          description4d-url="{% url 'egfdatabase:delete_description4' instance.workorderid %}"
+          labor4-url="{% url 'egfdatabase:labor4' instance.workorderid %}"
+          labor42-url="{% url 'egfdatabase:labor42' instance.workorderid %}"
+          retailmaterialcost4-url="{% url 'egfdatabase:retailmaterialcost4' instance.workorderid %}"
+          retailmaterialcost42-url="{% url 'egfdatabase:retailmaterialcost42' instance.workorderid %}"
+          description5-url="{% url 'egfdatabase:description5' instance.workorderid %}"
+          description52-url="{% url 'egfdatabase:description52' instance.workorderid %}"
+          description5d-url="{% url 'egfdatabase:delete_description5' instance.workorderid %}"
+          labor5-url="{% url 'egfdatabase:labor5' instance.workorderid %}"
+          labor52-url="{% url 'egfdatabase:labor52' instance.workorderid %}"
+          retailmaterialcost5-url="{% url 'egfdatabase:retailmaterialcost5' instance.workorderid %}"
+          retailmaterialcost52-url="{% url 'egfdatabase:retailmaterialcost52' instance.workorderid %}"
+          notes-url="{% url 'egfdatabase:notes' instance.workorderid %}"
+          proposaltype-url="{% url 'egfdatabase:proposaltype' instance.workorderid %}">
+        {% csrf_token %}
+        {{ form.name_of_field }}
+            <div class="fieldWrapper" id="col1">
+                <div id="workorderdate">
+                    {{ form.workorderdate.errors }}
+                    <label id="label_workorderdate">Work Order Date</label>
+                    {{ form.workorderdate }}
+                </div>
+                <div id="workorder">
+                    {{ form.workorder.errors }}
+                    <label id="label_workorder">Work Order ID</label>
+                    {{ form.workorder }}
+                </div>
+                <div id="gunid">
+                    {{ form.gunid.errors }}
+                    <label id="label_gunid">Gun ID</label>
+                    {{ form.gunid }}
+                </div>
+                <div id="custid">
+                    {{ form.custid.errors }}
+                    <label id="label_custid">Cust ID</label>
+                    {{ form.custid }}
+                 </div>
+            </div>
+            <div class="fieldWrapper" id="col2">
+                <div id="duplicating">
+                    {{ form.duplicating.errors }}
+                    <label id="label_duplicating">Duplicating</label>
+                    {{ form.duplicating }}
+                </div>
+                <div id="fittingtime">
+                    {{ form.fittingtime.errors }}
+                    <label id="label_fittingtime">Fitting Time</label>
+                    {{ form.fittingtime }}
+                </div>
+                <div id="fittingstock">
+                    {{ form.fittingstock.errors }}
+                    <label id="label_fittingstock">Fitting Stock</label>
+                    {{ form.fittingstock }}
+                </div>
+                <div id="refinishing">
+                    {{ form.refinishing.errors }}
+                    <label id="label_refinishing">Refinishing</label>
+                    {{ form.refinishing}}
+                </div>
+                <div id="finishtype">
+                    {{ form.finishtype.errors }}
+                    <label id="label_finishtype">Finish Type</label>
+                    {{ form.finishtype}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col3">
+                <div id="recoilpad">
+                    {{ form.recoilpad.errors }}
+                    <label id="label_recoilpad">Recoil Pad</label>
+                    {{ form.recoilpad }}
+                </div>
+                <div id="recoilpadman">
+                    {{ recoilpadman.errors }}
+                    <label id="label_recoilpadman">Manufacturer</label>
+                    {{ recoilpadman }}
+                </div>
+                <div id="recoilpadstyle">
+                    {{ recoilpadstyle.errors }}
+                    <label id="label_recoilpadstyle">Style</label>
+                    {{ recoilpadstyle }}
+                </div>
+                <div id="recoilpadnumber">
+                    {{ recoilpadnumber.errors }}
+                    <label id="label_recoilpadnumber">Number</label>
+                    {{ recoilpadnumber}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col4">
+                <div id="stockmod1">
+                    {{ form.stockmod1.errors }}
+                    <div id="label4">
+                        <label id="label_stockmod1">Stock Modification</label>
+                    </div>
+                    {{ form.stockmod1 }}
+                </div>
+                <div id="stockmod2">
+                    {{ form.stockmod2.errors }}
+                    <label id="label_stockmod2"></label>
+                    {{ form.stockmod2}}
+                </div>
+                <div id="stockmod3">
+                    {{ form.stockmod3.errors }}
+                    <label id="label_stockmod3"></label>
+                    {{ form.stockmod3 }}
+                </div>
+                <div id="stockrepairtype">
+                    {{ form.stockrepairtype.errors }}
+                    <label id="label_stockrepairtype">Stock Repair</label>
+                    {{ form.stockrepairtype }}
+                </div>
+                <div id="stockrepair">
+                    {{ form.stockrepair.errors }}
+                    <label id="label_stockrepair">Repair Time</label>
+                    {{ form.stockrepair}}
+                </div>
+                <div id="checkering">
+                    {{ form.checkering.errors }}
+                    <label id="label_checkering">Checkering</label>
+                    {{ form.checkering}}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col5">
+                <div id="description1">
+                    {{ form.description1.errors }}
+                    <div id="label1">
+                        <label id="label_description1">Miscellaneous Service</label>
+                    </div>
+                    {{ form.description1}}
+                </div>
+                <div id="labor1">
+                    {{ form.labor1.errors }}
+                    <div id="label2">
+                        <label id="label_labor1">labor</label>
+                    </div>
+                    {{ form.labor1}}
+                </div>
+                <div id="retailmaterialcost1">
+                    {{ form.retailmaterialcost1.errors }}
+                    <div id="label3">
+                        <label id="label_retailmaterialcost1">Mat. Cost</label>
+                    </div>
+                    {{ form.retailmaterialcost1 }}
+                </div>
+                <div id="description2">
+                    {{ form.description2.errors }}
+                    <label id="label_description2"></label>
+                    {{ form.description2}}
+                </div>
+                <div id="labor2">
+                    {{ form.labor2.errors }}
+                    <label id="label_labor2"></label>
+                    {{ form.labor2}}
+                </div>
+                <div id="retailmaterialcost2">
+                    {{ form.retailmaterialcost2.errors }}
+                    <label id="label_retailmaterialcost2"></label>
+                    {{ form.retailmaterialcost2 }}
+                </div>
+                <div id="description3">
+                    {{ form.description3.errors }}
+                    <label id="label_description3"></label>
+                    {{ form.description3}}
+                </div>
+                <div id="labor3">
+                    {{ form.labor3.errors }}
+                    <label id="label_labor3"></label>
+                    {{ form.labor3}}
+                </div>
+                <div id="retailmaterialcost3">
+                    {{ form.retailmaterialcost3.errors }}
+                    <label id="label_retailmaterialcost3"></label>
+                    {{ form.retailmaterialcost3 }}
+                </div>
+                <div id="description4">
+                    {{ form.description4.errors }}
+                    <label id="label_description4"></label>
+                    {{ form.description4}}
+                </div>
+                <div id="labor4">
+                    {{ form.labor4.errors }}
+                    <label id="label_labor4"></label>
+                    {{ form.labor4}}
+                </div>
+                <div id="retailmaterialcost4">
+                    {{ form.retailmaterialcost4.errors }}
+                    <label id="label_retailmaterialcost4"></label>
+                    {{ form.retailmaterialcost4 }}
+                </div>
+                <div id="description5">
+                    {{ form.description5.errors }}
+                    <label id="label_description5"></label>
+                    {{ form.description5}}
+                </div>
+                <div id="labor5">
+                    {{ form.labor5.errors }}
+                    <label id="label_labor5"></label>
+                    {{ form.labor5}}
+                </div>
+                <div id="retailmaterialcost5">
+                    {{ form.retailmaterialcost5.errors }}
+                    <label id="label_retailmaterialcost5"></label>
+                    {{ form.retailmaterialcost5 }}
+                </div>
+            </div>
+            <div class="fieldWrapper" id="col6">
+                <div id="Notes">
+                    {{ form.notes.errors }}
+                    <label id="label_notes">Notes</label>
+                    {{ form.notes }}
+                </div>
+                <div id="proposaltype">
+                    {{ form.proposaltype.errors }}
+                    <label id="label_proposaltype">Proposal Type</label>
+                    {{ form.proposaltype }}
+                </div>
+            </div>
+        <a id="btn1" href="{% url 'egfdatabase:proposal' instance.workorder %}">Price Work Order</a>
+        <a id="btn_delete1" class="confirm-delete" href="{% url 'egfdatabase:delete_workorder' instance.workorderid %}">Delete Work Order</a>
+    </form>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+////////////////// Fitting Time //////////////////////////////////////
+
+$(function(){
+    $('#id_fittingtime').change(function(){
+              var selectBox =document.getElementById('id_fittingtime');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingtimed-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingtime: $('#id_fittingtime').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_fittingtime').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_fittingtime');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingtime-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingtime: $('#id_fittingtime').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_fittingtime').change(function(){
+         setTimeout(function(){
+                var selectBox =document.getElementById('id_fittingtime');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingtime2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingtime: $('#id_fittingtime').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+////////////////// Duplicating //////////////////////////////////////
+
+$(function(){
+    $('#id_duplicating').click(function(){
+              var selectBox =document.getElementById('id_duplicating');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("duplicatingd-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_duplicating: $('#id_duplicating').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_duplicating').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_duplicating');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("duplicating-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_duplicating: $('#id_duplicating').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_duplicating').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_duplicating');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("duplicating2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_duplicating: $('#id_duplicating').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+
+
+
+
+////////////////// Fitting Stock //////////////////////////////////////
+
+$(function(){
+    $('#id_fittingstock').change(function(){
+              var selectBox =document.getElementById('id_fittingstock');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingstockd-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingstock: $('#id_fittingstock').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_fittingstock').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_fittingstock');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingstock-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingstock: $('#id_fittingstock').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_fittingstock').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_fittingstock');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("fittingstock2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_fittingstock: $('#id_fittingstock').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+
+
+////////////////// Refinishing //////////////////////////////////////
+$(function(){
+    $('#id_refinishing').change(function(){
+              var selectBox =document.getElementById('id_refinishing');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("refinishingd-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_refinishing: $('#id_refinishing').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_refinishing').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_refinishing');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("refinishing-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_refinishing: $('#id_refinishing').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_refinishing').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_refinishing');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("refinishing2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_refinishing: $('#id_refinishing').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+////////////////// Finish Type //////////////////////////////////////
+
+$(function(){
+    $('#id_finishtype').change(function(){
+              var selectBox =document.getElementById('id_finishtype');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("finishtyped-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_finishtype: $('#id_finishtype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_finishtype').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_finishtype');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("finishtype-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_finishtype: $('#id_finishtype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_finishtype').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_finishtype');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("finishtype2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_finishtype: $('#id_finishtype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+
+////////////////// Recoil Pad //////////////////////////////////////
+$(function(){
+    $('#id_recoilpad').change(function(){
+              var selectBox =document.getElementById('id_recoilpad');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpadd-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpad: $('#id_recoilpad').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_recoilpad').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_recoilpad');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpad-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpad: $('#id_recoilpad').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_recoilpad').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_recoilpad');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpad2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpad: $('#id_recoilpad').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+
+////////////////// Recoil Pad Manufacturer //////////////////////////////////////
+
+$(function(){
+    $('#id_recoilpadman').change(function(){
+                var selectBox =document.getElementById('id_recoilpadman');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpadman-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpadman: $('#id_recoilpadman').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+const recoilPadManA = document.getElementById("id_recoilpadman");
+recoilPadManA.addEventListener("change",function(){
+    setTimeout(function(){
+        var url = $("#form2").attr("recoilpadstylea-url");
+                    $.ajax({
+                        url: url,
+                        data:{
+                         },
+                         success: function (data) {
+                           $("#id_recoilpadstyle").html(data);
+                         }
+                    });
+    }, 500);
+});
+
+
+
+////////////////// Recoil Pad Style //////////////////////////////////////
+
+$(function(){
+    $('#id_recoilpadstyle').change(function(){
+                var selectBox =document.getElementById('id_recoilpadstyle');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("recoilpadstyle-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_recoilpadstyle:$('#id_recoilpadstyle').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+const recoilPadStyleA = document.getElementById("id_recoilpadstyle");
+recoilPadStyleA.addEventListener("change",function(){
+    setTimeout(function(){
+        var url = $("#form2").attr("recoilpadnuma-url");
+                    $.ajax({
+                        url: url,
+                        data:{
+                         },
+                         success: function (data) {
+                           $("#id_recoilpadnumber").html(data);
+                         }
+                    });
+    }, 1000);
+});
+
+////////////////// Recoil Pad Number //////////////////////////////////////
+
+$(function(){
+    $('#id_recoilpadnumber').change(function(){
+                var selectBox =document.getElementById('id_recoilpadnumber');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("recoilpadnumd-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_recoilpadnumber:$('#id_recoilpadnumber').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_recoilpadnumber').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_recoilpadnumber');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpadnum-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpadnumber: $('#id_recoilpadnumber').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_recoilpadnumber').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_recoilpadnumber');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("recoilpadnum2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_recoilpadnumber: $('#id_recoilpadnumber').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+////////////////// Stock Modification 1 //////////////////////////////////////
+
+$(function(){
+    $('#id_stockmod1').change(function(){
+                var selectBox =document.getElementById('id_stockmod1');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("stockmod1d-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_stockmod1:$('#id_stockmod1').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_stockmod1').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_stockmod1');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod1-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod1: $('#id_stockmod1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 1000);
+    });
+});
+
+$(function(){
+    $('#id_stockmod1').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_stockmod1');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod12-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod1: $('#id_stockmod1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 2000);
+    });
+});
+
+////////////////// Stock Modification 2 //////////////////////////////////////
+
+$(function(){
+    $('#id_stockmod2').change(function(){
+                var selectBox =document.getElementById('id_stockmod2');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("stockmod2d-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_stockmod2:$('#id_stockmod2').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_stockmod2').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_stockmod2');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod2: $('#id_stockmod2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_stockmod2').change(function(){
+         setTimeout(function(){
+                var selectBox2 =document.getElementById('id_stockmod3');
+                var userInput =selectBox2.options[selectBox2.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod22-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod2: $('#id_stockmod2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 1000);
+    });
+});
+
+
+////////////////// Stock Modification 3 //////////////////////////////////////
+
+$(function(){
+    $('#id_stockmod3').change(function(){
+                var selectBox =document.getElementById('id_stockmod3');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("stockmod3d-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_stockmod3:$('#id_stockmod3').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_stockmod3').change(function(){
+        setTimeout(function(){
+                var selectBox3 =document.getElementById('id_stockmod3');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod3-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod3: $('#id_stockmod3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_stockmod3').change(function(){
+         setTimeout(function(){
+                var selectBox3 =document.getElementById('id_stockmod3');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockmod32-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockmod3: $('#id_stockmod3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 1000);
+    });
+});
+
+////////////////// Stock Repair Type //////////////////////////////////////
+
+$(function(){
+    $('#id_stockrepairtype').change(function(){
+                var selectBox =document.getElementById('id_stockrepairtype');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("stockrepairtyped-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_stockrepairtype:$('#id_stockrepairtype').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_stockrepairtype').change(function(){
+        setTimeout(function(){
+                var selectBox3 =document.getElementById('id_stockrepairtype');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockrepairtype-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockrepairtype: $('#id_stockrepairtype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_stockrepairtype').change(function(){
+         setTimeout(function(){
+                var selectBox3 =document.getElementById('id_stockrepairtype');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockrepairtype2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockrepairtype: $('#id_stockrepairtype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 1000);
+    });
+});
+
+
+////////////////// Stock Repair //////////////////////////////////////
+
+$(function(){
+    $('#id_stockrepair').change(function(){
+              var selectBox =document.getElementById('id_stockrepair');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockrepaird-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockrepair: $('#id_stockrepair').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+
+
+
+$(function(){
+    $('#id_stockrepair').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_stockrepair');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockrepair-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockrepair: $('#id_stockrepair').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_stockrepair').change(function(){
+         setTimeout(function(){
+                var selectBox =document.getElementById('id_stockrepair');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("stockrepair2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_stockrepair: $('#id_stockrepair').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+         }, 1000);
+    });
+});
+////////////////// Checkering//////////////////////////////////////
+
+$(function(){
+    $('#id_checkering').change(function(){
+                var selectBox =document.getElementById('id_checkering');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                var url = $("#form2").attr("checkeringd-url");
+                $.ajax({
+                type:'POST',
+                url: url,
+                data:{
+                    id_checkering:$('#id_checkering').val(),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                });
+    });
+});
+
+$(function(){
+    $('#id_checkering').change(function(){
+        setTimeout(function(){
+                var selectBox3 =document.getElementById('id_checkering');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("checkering-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_checkering: $('#id_checkering').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 500);
+    });
+});
+
+$(function(){
+    $('#id_checkering').change(function(){
+         setTimeout(function(){
+                var selectBox3 =document.getElementById('id_checkering');
+                var userInput =selectBox3.options[selectBox3.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("checkering2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_checkering: $('#id_checkering').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 1000);
+    });
+});
+
+
+////////////////// Wood //////////////////////////////////////
+
+$(function(){
+    $('#id_wood').change(function(){
+                var selectBox =document.getElementById('id_wood');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("wood-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_wood: $('#id_wood').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+////////////////// Description1 //////////////////////////////////////
+
+function Description1dFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description1d-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description1: $('#id_description1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+function Description1Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description1-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description1: $('#id_description1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function Descr1Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description12-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description1: $('#id_description1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+
+////////////////// Labor1 //////////////////////////////////////
+
+function Labor1Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor1-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor1: $('#id_labor1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function LaborFunction1() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor12-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor1: $('#id_labor1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// RetailMaterialCost1 //////////////////////////////////////
+
+function RetailMaterialCost1Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost1-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost1: $('#id_retailmaterialcost1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function RetailMat1CostFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost1');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost12-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost1: $('#id_retailmaterialcost1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+////////////////// Description2 //////////////////////////////////////
+
+function Description2dFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description2d-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description2: $('#id_description2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+function Description2Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description2: $('#id_description2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function Descr2Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description22-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description2: $('#id_description2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+
+////////////////// Labor2 //////////////////////////////////////
+
+function Labor2Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor2: $('#id_labor2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function LaborFunction2() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor22-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor2: $('#id_labor2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// RetailMaterialCost2 //////////////////////////////////////
+
+function RetailMaterialCost2Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost2: $('#id_retailmaterialcost2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function RetailMat2CostFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost2');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost22-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost2: $('#id_retailmaterialcost2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+////////////////// Description3 //////////////////////////////////////
+
+function Description3dFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description3d-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description3: $('#id_description3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+function Description3Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description3-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description3: $('#id_description3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function Descr3Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description32-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description3: $('#id_description3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+
+////////////////// Labor3 //////////////////////////////////////
+
+function Labor3Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor3-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor3: $('#id_labor3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function LaborFunction3() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor32-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor3: $('#id_labor3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// RetailMaterialCost3 //////////////////////////////////////
+
+function RetailMaterialCost3Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost3-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost3: $('#id_retailmaterialcost3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function RetailMat3CostFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost3');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost32-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost3: $('#id_retailmaterialcost1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+////////////////// Description4 //////////////////////////////////////
+
+function Description4dFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description4d-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description4: $('#id_description4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+function Description4Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description4-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description4: $('#id_description4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function Descr4Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description42-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description4: $('#id_description4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+
+////////////////// Labor4 //////////////////////////////////////
+
+function Labor4Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor4-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor4: $('#id_labor4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function LaborFunction4() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor42-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor4: $('#id_labor4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// RetailMaterialCost4 //////////////////////////////////////
+
+function RetailMaterialCost4Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost4-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost4: $('#id_retailmaterialcost4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function RetailMat4CostFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost4');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost42-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost4: $('#id_retailmaterialcost4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+////////////////// Description5 //////////////////////////////////////
+
+function Description5dFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description5d-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description5: $('#id_description5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+function Description5Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description5-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description5: $('#id_description5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function Descr5Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_description5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("description52-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_description5: $('#id_description5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+
+////////////////// Labor5 //////////////////////////////////////
+
+function Labor5Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor5-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor5: $('#id_labor5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function LaborFunction5() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_labor5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("labor52-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_labor5: $('#id_labor5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// RetailMaterialCost5 //////////////////////////////////////
+
+function RetailMaterialCost5Function() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost5-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost5: $('#id_retailmaterialcost5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+function RetailMat5CostFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_retailmaterialcost5');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("retailmaterialcost52-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_retailmaterialcost5: $('#id_retailmaterialcost5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                       },
+                    });
+    }, 1000);
+}
+
+
+////////////////// Notes //////////////////////////////////////
+function NotesFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_notes');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("notes-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_notes: $('#id_notes').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+////////////////// Proposaltype //////////////////////////////////////
+$(function(){
+    $('#id_proposaltype').change(function(){
+                var selectBox =document.getElementById('id_proposaltype');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("proposaltype-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_proposaltype: $('#id_proposaltype').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    });
+});
+
+</script>
+{% endblock %}
