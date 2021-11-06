@@ -1,24 +1,10 @@
 #main{
-  min-height:800px;
+  min-height:829px;
   background:#35424a;
   text-align:center;
   color:#e8491d;
 }
 
-#alan1 {
-  width:220px;
-  margin-left:auto;
-  margin-right:auto;
-  }
-
- #alan2 {
-  width:220px;
-  margin-left:20px;
-  }
-#p{
-    padding-left:10px;
-
-}
 div#title{
     font-size:50px;
     font-style: italic;
@@ -358,4 +344,1969 @@ div#service13{
     font-size:20px;
     font-style: italic;
     font-family: "Times New Roman";
+}
+
+footer{
+  width:1920px;
+  height: 23px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+p{
+  width:1920px;
+  height: 15px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:13px;
+}
+
+/* Media Queries Iphone 10  */
+@media screen and (max-width:375px){
+
+div#title{
+    font-size:32px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:5px;
+}
+
+section#pricing{
+    width:375px;
+    height:416px;
+    margin-top:20px;
+}
+
+div#service1{
+    width:165px;
+    height:19px;
+    margin-left:5px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service1A{
+    width:168px;
+    margin-left:auto;
+    margin-right:14px;
+    margin-top: -17px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service2{
+    width:137px;
+    margin-left:26px;
+    margin-right:0px;
+    margin-top:-4px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:11px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+
+div#service2A{
+    width:144px;
+    margin-left:auto;
+    margin-right:28px;
+    margin-top: -14px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:11px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service3{
+    width:155px;
+    margin-left:5px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service3A{
+    width:172px;
+    margin-left:auto;
+    margin-right:10px;
+    margin-top: -20px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+
+div#service4{
+    width:162px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 25px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service4A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service5{
+    width:185px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service5A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service6{
+    width:185px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service6A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service7{
+    width:214px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service7A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service8{
+    width:218px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service8A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service9{
+    width:229px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service9A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service10{
+    width:101px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service10A{
+    width:73px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service11{
+    width:99px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service11A{
+    width:120px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -22px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service12{
+    width:93px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service12A{
+    width:216px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -22px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service13{
+    width:338px;
+    margin-left:17px;
+    margin-right:0px;
+    margin-top:40px;
+    text-align: center;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:15px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+#p{
+    padding-left:10px;
+}
+
+footer {
+    width:335px;
+    padding: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+}
+@media screen and (max-width:566px) and (min-width:376px){
+#main{
+  min-height:800px;
+  background:#35424a;
+  text-align:center;
+}
+
+
+#p{
+    padding-left:10px;
+}
+
+div#title{
+    font-size:50px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:15px;
+}
+
+section#pricing{
+    margin-top:20px;
+}
+
+div#service1{
+    width:325px;
+    height:30px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service1A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -30px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service2{
+    width:264px;
+    margin-left:599px;
+    margin-right:0px;
+    margin-top:-6px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+
+div#service2A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -28px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service3{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service3A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+
+div#service4{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service4A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service5{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service5A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service6{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service6A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service7{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service7A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service8{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service8A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service9{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service9A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service10{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service10A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service11{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service11A{
+    width:454px;
+    margin-left:auto;
+    margin-right:362px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service12{
+    width:325px;
+    margin-left:574px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service12A{
+    width:300px;
+    margin-left:auto;
+    margin-right:520px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service13{
+    width:825px;
+    margin-left:645px;
+    margin-right:0px;
+    margin-top:25px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+#main{
+  width:812px;
+  height:1140px;
+  background:#35424a;
+  text-align:center;
+}
+
+div#title{
+    font-size:50px;
+}
+
+section#pricing{
+    width:600px;
+    height:375px;
+    margin-top:20px;
+    margin-left:101px;
+}
+
+div#service1{
+    width:324px;
+    height:19px;
+    margin-left:5px;
+    margin-right:0px;
+}
+
+div#service1A{
+    width:296px;
+    height:19px;
+    margin-right:-50px;
+    margin-top: -17px;
+
+}
+
+div#service2{
+    width:324px;
+    height:19px;
+    margin-left:26px;
+    margin-right:0px;
+    margin-top:3px;
+}
+
+
+div#service2A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-57px;
+    margin-top: -20px;
+}
+
+div#service3{
+    width:324px;
+    height:19px;
+    margin-left:5px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service3A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -20px;
+}
+
+
+div#service4{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 25px;
+}
+
+div#service4A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service5{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service5A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service6{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service6A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service7{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service7A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service8{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service8A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service9{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service9A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service10{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service10A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -23px;
+}
+
+div#service11{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service11A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -22px;
+}
+
+div#service12{
+    width:324px;
+    height:19px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+}
+
+div#service12A{
+    width:296px;
+    height:19px;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-top: -22px;
+}
+
+div#service13{
+
+    margin-left:111px;
+    margin-top:300px;
+}
+
+#p{
+    padding-left:10px;
+}
+
+footer {
+    width:739px;
+    padding: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+}
+
+
+
+
+
+/* Media Queries Iphone 10 Sideways */
+@media screen and (max-width:810px) and (min-width:681px){
+
+
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+#main{
+  width:798px;
+  height:815px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+div#title{
+    font-size:50px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:5px;
+}
+
+section#pricing{
+    width:600px;
+    height:375px;
+    margin-top:20px;
+    margin-left:101px;
+}
+
+div#service1{
+    width:324px;
+    height:19px;
+    margin-left:5px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service1A{
+    width:296px;
+
+    margin-right:0px;
+    margin-top: -17px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service2{
+    width:324px;
+    margin-left:26px;
+    margin-right:0px;
+    margin-top:3px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:16px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+
+div#service2A{
+    width:296px;
+    margin-left:auto;
+    margin-right:7px;
+    margin-top: -20px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:16px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service3{
+    width:324px;
+    margin-left:5px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service3A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -20px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+
+div#service4{
+   width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 25px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service4A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service5{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service5A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service6{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service6A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service7{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service7A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service8{
+   width:324px;;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service8A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service9{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service9A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service10{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service10A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -23px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service11{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service11A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -22px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service12{
+    width:324px;
+    margin-left:4px;
+    margin-right:0px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service12A{
+    width:296px;
+    margin-left:auto;
+    margin-right:0px;
+    margin-top: -22px;
+    text-align: right;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service13{
+    width:574px;
+    margin-left:115px;
+    margin-right:0px;
+    margin-top:215px;
+    text-align: center;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+footer{
+  width:798px;
+  height: 35px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:6px;
+}
+
+p{
+  width:790px;
+  height: 15px;
+  padding:4px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:16px;
+}
+
+}
+
+/* Media Queries IPad Short Way */
+@media screen and (max-width:1080px) and (min-width:811px){
+
+#main{
+  width:1024px;
+  min-height:800px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+
+div#title{
+    font-size:50px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:15px;
+}
+
+section#pricing{
+    margin-top:20px;
+}
+
+div#service1{
+    width:325px;
+    height:30px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service1A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -30px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service2{
+    width:264px;
+    margin-left:272px;
+    margin-right:0px;
+    margin-top:-6px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+
+div#service2A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -28px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service3{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service3A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+
+div#service4{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service4A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service5{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service5A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service6{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service6A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service7{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service7A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service8{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service8A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service9{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service9A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service10{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service10A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service11{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service11A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service12{
+    width:325px;
+    margin-left:255px;
+    margin-right:0px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+div#service12A{
+    width:300px;
+    margin-left:auto;
+    margin-right:155px;
+    margin-top: -39px;
+    text-align: left;
+    padding: 0px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    float: right;
+}
+
+div#service13{
+    width:510px;
+    margin-left:254px;
+    margin-right:0px;
+    margin-top:25px;
+    text-align: left;
+    padding: 10px;
+    color: #C0C0C0;
+    font-size:20px;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+footer{
+  width:1024px;
+  height: 35px;
+  padding:0px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:6px;
+}
+
+p{
+  width:1016px;
+  height: 15px;
+  padding:4px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+  font-size:16px;
+}
+
+}
+
+/* Media Queries IPad Long Way */
+@media screen and (max-width:1366px) and (min-width:1081px){
+#main{
+  width:auto;
+  min-height:800px;
+  background:#35424a;
+  text-align:center;
+  color:#e8491d;
+}
+
+
+div#title{
+    font-size:50px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 5px black;
+    padding-top:15px;
+}
+
+section#pricing{
+    margin-top:20px;
+}
+
+div#service1{
+    width:325px;
+    height:30px;
+    margin-left:290px;
+    margin-right:0px;
+}
+
+div#service1A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -30px;
+}
+
+div#service2{
+    width:264px;
+    margin-left:308px;
+    margin-right:0px;
+    margin-top:-6px;
+}
+
+
+div#service2A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -28px;
+}
+
+div#service3{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service3A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+
+div#service4{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service4A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service5{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service5A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service6{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service6A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service7{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service7A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service8{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service8A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service9{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service9A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service10{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service10A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service11{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service11A{
+    width:454px;
+    margin-left:auto;
+    margin-right:29px;
+    margin-top: -39px;
+}
+
+div#service12{
+    width:325px;
+    margin-left:280px;
+    margin-right:0px;
+}
+
+div#service12A{
+    width:300px;
+    margin-left:auto;
+    margin-right:180px;
+    margin-top: -39px;
+}
+
+div#service13{
+    width:825px;
+    margin-left:411px;
+    margin-right:0px;
+    margin-top:25px;
+}
+
+p{
+    padding:4px;
+    height: 15px
+}
+
+footer {
+    width:auto;
+    height: 35px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
 }
