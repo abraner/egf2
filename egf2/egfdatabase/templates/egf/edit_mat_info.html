@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>HVAC Bidding|Edit Cust. Info</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="../../../static/login/edit_mat_info.css">
+        <section id="workarea1">
+            <section id="section2">
+  <!--  <container id="con1"> -->
+                <form id="form2" method="post">
+                    <h1 id="formh2">Edit Material Information</h1>
+                    <br>
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <br>
+                <button id="btn1" type="submit" class="btn-success">Update Material Information</button>
+                </form>
+            </section>
+        </section>
+{% endblock %}
