@@ -1,0 +1,1333 @@
+<style>
+@page {
+    size: a4 portrait;
+
+
+
+    @frame header_frame {           /* Header Frame */
+         left: 15pt; width: 580pt; top: 5pt; height: 80pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    @frame cust_frame {          /* Customer Frame */
+        left: 15pt; width: 580pt; top: 85pt; height: 80pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    @frame gun_frame {           /* Gun Frame */
+        left: 15pt; width: 580pt; top: 165pt; height: 30pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+    @frame data_frame {           /* Data Frame */
+        left: 15pt; width: 580pt; top: 195pt; height: 580pt;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+
+}
+
+
+
+#formh2{
+width:225px;
+height:34px;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+font-family: Times New Roman;
+font-style: italic;
+font-weight: bold;
+font-size:30px;
+padding-top:0px;
+}
+
+
+#phone{
+margin-right:auto;
+margin-left:auto;
+padding-top: -40px;
+font-size: 14px;
+}
+
+#name{
+margin-right:auto;
+margin-left:auto;
+padding-top:-20px;
+font-size: 14px;
+}
+
+#website{
+margin-left:-665px;
+padding-top:-23px;
+font-size: 14px;
+}
+
+#email1{
+margin-left:600px;
+padding-top: -40px;
+font-size: 14px;
+}
+
+
+
+
+
+div#cust{
+    width:685px;
+    height:93px;
+    text-align:center;
+    font-size: 12px;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+}
+
+
+#id{
+    width:60px;
+    margin-left:-675px;
+    margin-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#custid{
+    width:60px;
+    margin-left:-600px;
+    padding-top:-23px;
+    text-align:center;
+    font-size: 14px;
+}
+
+div#first{
+    width:80px;
+    margin-left:-690px;
+    margin-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custfirst{
+    width:125px;
+    margin-left:-570px;
+    padding-top:-23px;
+    text-align:center;
+    font-size: 14px;
+}
+
+
+div#last{
+    width:80px;
+    margin-left:-690px;
+    margin-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custlast{
+    width:125px;
+    margin-left:-565px;
+    padding-top:-23px;
+    text-align:center;
+    font-size: 14px;
+
+}
+
+div#add{
+    width:80px;
+    margin-left:-675px;
+    padding-top:-3px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custadd{
+    width:170px;
+    margin-left:86px;
+    padding-top:-23px;
+    text-align:left;
+    font-size: 14px;
+}
+
+div#city{
+    width:80px;
+    margin-left:0px;
+    padding-top:-85px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcity{
+    width:200px;
+    margin-left:120px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+div#state{
+    width:191px;
+    margin-left:0px;
+    padding-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custst{
+    width:25px;
+    margin-left:70px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+div#cell{
+    width:95px;
+    margin-left:-50px;
+    padding-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcell{
+    width:107px;
+    margin-left:150px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+div#email{
+    width:95px;
+    margin-left:387px;
+    padding-top:-71px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custemail{
+    width:165px;
+    margin-left:566px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#email{
+    width:75px;
+    margin-left:-30px;
+    margin-top:-22px;
+}
+
+
+
+
+#gun{
+    height:28px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+#gunidlabel{
+    width:60px;
+    margin-left:-617px;
+    padding-top:75px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunid{
+    width:60px;
+    margin-left:-544px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunmanlabel{
+    width:60px;
+    margin-left:-367px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunman{
+    width:60px;
+    margin-left:-211px;
+    padding-top:-22px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunmodellabel{
+    width:60px;
+    margin-left:-45px;
+    padding-top:-23px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunmodel{
+    width:60px;
+    margin-left:35px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunseriallabel{
+    width:104px;
+    margin-left:222px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunserial{
+    width:95px;
+    margin-left:560px;
+    padding-top:-23px;
+    text-align:left;
+    font-size: 14px;
+}
+
+#gungaugelabel{
+    width:60px;
+    margin-left:568px;
+    padding-top:-24px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gungauge{
+    width:60px;
+    margin-left:635px;
+    padding-top:-23px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#col1.fieldWrapper{
+    height:139px;
+    width:570px;
+    margin-left:0px;
+    margin-top:38px;
+}
+
+#label_workorderdate{
+    width:63px;
+    margin-left:610px;
+    padding-top:-45px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#workorderdate{
+    height:60px;
+    width:682px;
+    font-size: 14px;
+    margin-left:615px;
+    padding-top:0px;
+}
+
+div#evalueidlabel{
+    width:63px;
+    margin-left:-690px;
+    padding-top:10px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#evalueid{
+    width:63px;
+    margin-left:-690px;
+    font-size: 14px;
+}
+
+
+#col2.fieldWrapper{
+    height:180px;
+    width:570px;
+    margin-left:0px;
+    margin-top:0px;
+    font-size: 12px;
+}
+
+div#label_eyedominace{
+    margin-left:-55px;
+    padding-top:-30px;
+    color:black;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#eyedon{
+    width:160px;
+    margin-left:120px;
+    padding-top:-22px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_eyedominace{
+    width:70px;
+    height:25px;
+    text-align:center;
+
+}
+
+div#exist{
+    height:290px;
+    width:253px;
+    margin-top:20px;
+}
+
+h6#exittext{
+    width:200px;
+    margin-left:-300px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#label_exhand{
+    color:black;
+    width:126px;
+    margin-right:350px;
+    padding-top:0px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exhand{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exhand{
+    width:210px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exlop{
+    color:black;
+    width:126px;
+    margin-right:350px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exlop{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exlop{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exdac{
+    color:black;
+    width:126px;
+    margin-right:410px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exdac{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exdac{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exdaf{
+    color:black;
+    width:126px;
+    margin-right:400px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exdaf{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exdaf{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exdah{
+    color:black;
+    width:126px;
+    margin-right:400px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exdah{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exdah{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exdamc{
+    color:black;
+    width:126px;
+    margin-right:445px;
+    padding-top:-12px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exdamc{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exdamc{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_excast{
+    color:black;
+    width:126px;
+    margin-right:350px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#excast{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_excast{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exlotp{
+    color:black;
+    width:126px;
+    margin-right:445px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#exlotp{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_exlotp{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_extoeout{
+    color:black;
+    width:126px;
+    margin-right:350px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#extoeout{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_extoeout{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_expitch{
+    color:black;
+    width:126px;
+    margin-right:350px;
+    padding-top:-15px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#expitch{
+    width:210px;
+    margin-left:-220px;
+    padding-top:-42px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_expitch{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_exdac{
+    color:black;
+    height:25px;
+}
+
+#new{
+    float:right;
+    height:290px;
+    width:253px;
+}
+
+h6#newtext{
+    width:200px;
+    margin-left:340px;
+    padding-top:-365px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#label_newhand{
+    color:black;
+    width:126px;
+    margin-right:-230px;
+    padding-top:0px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newhand{
+    width:210px;
+    margin-left:380px;
+    padding-top:-22px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newhand{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newlop{
+    color:black;
+    margin-right:-230px;
+    padding-top:5px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newlop{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newlop{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newdac{
+    margin-right:-170px;
+    padding-top:8px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newdac{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newdac{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newdaf{
+    margin-right:-180px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newdaf{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newdaf{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newdah{
+    margin-right:-180px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newdah{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newdah{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newdamc{
+    margin-right:-130px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newdamc{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newdamc{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newcast{
+    margin-right:-230px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newcast{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newcast{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newlotp{
+    margin-right:-120px;
+    padding-top:5px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newlotp{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newlotp{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newtoeout{
+    margin-right:-220px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newtoeout{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newtoeout{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+#label_newpitch{
+    margin-right:-240px;
+    padding-top:10px;
+    height:25px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#newpitch{
+    width:210px;
+    margin-left:380px;
+    padding-top:-25px;
+    height:25px;
+    font-size: 14px;
+}
+
+input#id_newpitch{
+    width:70px;
+    height:25px;
+    text-align:center;
+}
+
+div#cor1{
+    padding-top:-30px;
+    margin-left:-500px;
+    height:25px;
+    width:70px;
+    font-size: 14px;
+
+
+}
+
+div#select{
+   margin-top:45px;
+   height:300px;
+
+}
+
+input#id_cor1{
+    width:200px;
+    padding-top:0px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor2{
+    padding-top:-65px;
+    height:25px;
+    width:205px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 14px;
+}
+
+input#id_cor2{
+    width:200px;
+    margin-top:0px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor3{
+    padding-top:-70px;
+    margin-right:-400px;
+     height:25px;
+     width:205px;
+     float:right;
+    font-size: 14px;
+}
+
+input#id_cor3{
+    width:200px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+    float:right;
+}
+
+div#cor4{
+    padding-top:-30px;
+    margin-left:-500px;
+    height:25px;
+    width:70px;
+    font-size: 14px;
+}
+
+input#id_cor4{
+    width:200px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor5{
+    padding-top:-65px;
+    height:25px;
+    width:205px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 14px;
+
+}
+
+input#id_cor5{
+    width:200px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor6{
+    padding-top:-70px;
+    margin-right:-400px;
+     height:25px;
+     width:205px;
+     float:right;
+    font-size: 14px;
+
+}
+
+input#id_cor6{
+    width:200px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor7{
+    padding-top:-30px;
+    margin-left:-500px;
+    height:25px;
+    width:70px;
+    font-size: 14px;
+
+}
+
+input#id_cor7{
+    width:200px;
+    margin-left:0px;
+     height:25px;
+     width:205px;
+}
+
+div#cor8{
+    padding-top:-65px;
+    height:25px;
+    width:205px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 14px;
+
+}
+
+input#id_cor8{
+    width:200px;
+    margin-top:-18px;
+    margin-bottom:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor9{
+    padding-top:-70px;
+    margin-right:-400px;
+     height:25px;
+     width:205px;
+     float:right;
+    font-size: 14px;
+
+}
+
+input#id_cor9{
+    width:200px;
+    margin-left:0px;
+    height:25px;
+    width:205px;
+}
+
+div#cor10{
+    height:25px;
+    margin-left:40px;
+    padding-top:-30px;
+    font-size: 14px;
+    text-align:left;
+
+}
+
+input#id_cor10{
+    height:25px;
+    width:623px;
+    margin-right:2px;
+}
+
+div#cor11{
+    height:25px;
+    margin-left:40px;
+    padding-top:-30px;
+    font-size: 14px;
+    text-align:left;
+}
+input#id_cor11{
+    height:25px;
+    width:623px;
+    margin-right:2px;
+}
+
+#notes{
+    width:626px;
+    height:91px;
+    margin-left:30px;
+    margin-top:11px;
+    font-size: 14px;
+    text-align:left;
+}
+
+#label_notes{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    width:96px;
+    margin-left:0px;
+    margin-right:74px;
+    margin-top:0px;
+}
+
+#id_notes{
+    width:624px;
+    height:75px;
+    margin-right:13px
+}
+
+</style>
+<center id="page">
+    <br>
+    <form method="post" id="form2">
+        <div id="header_frame">
+        <div id="header">
+            <h5 id="formh2">Elite Gun Fitting</h5>
+            {% csrf_token %}
+            {{ form.name_of_field }}
+                <h6 id="phone" >815-955-2074</h6>
+                <h6 id="name" >Alan Braner</h6>
+                <h6 id="website" >www.egf.com</h6>
+                <h6 id="email1" >elitegunfitting@gmail.com</h6>
+        </div>
+        </div>
+        <div id="cust_frame">
+            {% for result in CustomerInfo %}
+                <div id="id" >Cust ID:</div>
+                <div id="custid" >
+                    {{ result.id }}
+                </div>
+               <div id="first" >First Name:</div>
+                <div id="custfirst" >
+                    {{ result.custfirstname }}
+                </div>
+                <div id="last" >Last Name:</div>
+                <div id="custlast" >
+                    {{ result.custlastname }}
+                </div>
+                <div id="add" >Address:</div>
+                <div id="custadd" >
+                    {{ result.custadd1 }}
+                </div>
+                <div  id="city" >City:</div>
+                <div id="custcity" >
+                    {{ result.custcity }}
+                </div>
+                <div  id="state" >State:</div>
+                <div id="custst" >
+                    {{ result.custst }}
+                </div>
+                <div id="cell" >Cell Number:</div>
+                <div id="custcell" >
+                    {{ result.custcell1 }}
+                </div>
+                <div id="email" >Email:</div>
+                <div id="custemail" >
+                    {{ result.custemail1 }}
+                </div>
+            {% endfor %}
+        </div>
+        <div id="gun_frame">
+            {% for result in GunInfo %}
+            <div id="gunidlabel" >Gun ID:</div>
+            <div id="gunid" >
+                {{ result.gunid }}
+            </div>
+            <div id="gunmanlabel" >Manufacturer:</div>
+            <div id="gunman" >
+                {{ result.gunmanufacturer }}
+            </div>
+            <div id="gunmodellabel" >Model:</div>
+            <div id="gunmodel" >
+                {{ result.gunmodel }}
+            </div>
+            <div id="gunseriallabel">Serial Number:</div>
+            <div id="gunserial" >
+                {{ result.gunserialnumber }}
+            </div>
+            <div id="gungaugelabel">Gauge:</div>
+            <div id="gungauge" >
+                {{ result.gungauge }}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="data_frame">
+            {% for result in Evaluation %}
+            <div id="evalueidlabel">Evalue. ID:</div>
+            <div id="evalueid" >
+                {{ result.evalueid }}
+            </div>
+                <div id="label_workorderdate">Work Order Date:</div>
+                <div id="workorderdate">
+                {{ result.workorderdate }}
+            </div>
+                <div id="label_eyedominace">Eye Dominace</div>
+                <div id="eyedon">
+                {{ result.eyedominace }}
+            </div>
+        <div id="exist">
+            <h6 id="exittext" >Existing Dimensions</h6>
+                <div id="label_exhand">Hand</div>
+                <div id="exhand">
+                {{ result.exhand }}
+            </div>
+                <div id="label_exlop">LOP</div>
+                <div id="exlop">
+                {{ result.exlop }}
+            </div>
+                <div id="label_exdac">Drop at Comb</div>
+                <div id="exdac">
+                {{ result.exdac }}
+            </div>
+                <div id="label_exdaf">Drop at Face</div>
+                <div id="exdaf">
+                {{ result.exdaf }}
+            </div>
+                <div id="label_exdah">Drop at Heal</div>
+                <div id="exdah">
+                {{ result.exdah }}
+            </div>
+                <div id="label_exdamc">Drop at Monte Carlo</div>
+                <div id="exdamc">
+                {{ result.exdamc }}
+            </div>
+                <div id="label_excast">Cast</div>
+                <div id="excast">
+                {{ result.excast }}
+            </div>
+                <div id="label_exlotp">Length of Tripper Pull</div>
+                <div id="exlotp">
+                {{ result.exlotp }}
+            </div>
+                <div id="label_extoeout">Toe Out</div>
+                <div id="extoeout">
+                {{ result.extoeout }}
+            </div>
+                <div id="label_expitch">Pitch</div>
+                <div id="expitch">
+                {{ result.expitch }}
+            </div>
+        </div>
+        <div id="new">
+            <h6 id="newtext" >New Dimensions</h6>
+                <div id="label_newhand">Hand</div>
+                <div id="newhand">
+                {{ result.newhand }}
+            </div>
+                <div id="label_newlop">LOP</div>
+                <div id="newlop">
+                {{ result.newlop }}
+            </div>
+                <div id="label_newdac">Drop at Comb</div>
+                <div id="newdac">
+                {{ result.newdac }}
+            </div>
+                <div id="label_newdaf">Drop at Face</div>
+                <div id="newdaf">
+                {{ result.newdaf }}
+            </div>
+                <div id="label_newdah">Drop at Heal</div>
+                <div id="newdah">
+                {{ result.newdah }}
+            </div>
+                <div id="label_newdamc">Drop at Monte Carlo</div>
+                <div id="newdamc">
+                {{ result.newdamc }}
+            </div>
+                <div id="label_newcast">Cast</div>
+                <div id="newcast">
+                {{ result.newcast }}
+            </div>
+                <div id="label_newlotp">Length of Trigger Pull</div>
+                 <div id="newlotp">
+                {{ result.newlotp }}
+            </div>
+                <div id="label_newtoeout">Toe Out</div>
+                <div id="newtoeout">
+                {{ result.newtoeout }}
+            </div>
+                <div id="label_newpitch">Pitch</div>
+                <div id="newpitch">
+                {{ result.newpitch }}
+            </div>
+        </div>
+        <div id="select">
+            <div id="cor1">
+                {{ result.cor1 }}
+            </div>
+            <div id="cor2">
+                {{ result.cor2 }}
+            </div>
+            <div id="cor3">
+                {{ result.cor3 }}
+            </div>
+            <div id="cor4">
+                {{ result.cor4 }}
+            </div>
+            <div id="cor5">
+                {{ result.cor5 }}
+            </div>
+            <div id="cor6">
+                {{ result.cor6 }}
+            </div>
+            <div id="cor7">
+                {{ result.cor7 }}
+            </div>
+            <div id="cor8">
+                {{ result.cor8 }}
+            </div>
+            <div id="cor9">
+                {{ result.cor9 }}
+            </div>
+                <div id="label_cor10"></div>
+                <div id="cor10">
+                {{ result.cor10 }}
+            </div>
+                <div id="label_cor11"></div>
+                <div id="cor11">
+                {{ result.cor11 }}
+            </div>
+                <div id="label_notes">Notes</div>
+                <div id="notes">
+                {{ result.notes }}
+            </div>
+            {% endfor %}
+
+            </div>
+        </div>
+        </div>
+            <div class="fieldWrapper" id="col2">
+            </div>
+    </form>
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
