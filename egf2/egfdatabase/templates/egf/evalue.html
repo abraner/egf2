@@ -1,0 +1,982 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>ECG Work Order Page</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<link rel="shortcut icon" href="#" />
+<link rel="stylesheet" href="../../../../static/login/evalue7.css">
+<a id="evalueback"  href="{% url 'egfdatabase:guninfo' instance.gunid %}">Back Button</a>
+<a id="evalueemailpdf"  href="{% url 'egfdatabase:generate_view2' instance.gunid %}" target="_blank">View Invoice</a>
+<a id="evaluepdf"  href="{% url 'egfdatabase:pdf_download2' instance.gunid  %}">Download</a>
+<center id="page">
+    <br>
+    <form method="post" id="form2"
+          workorderdate-url="{% url 'egfdatabase:workorderdate' instance.evalueid %}"
+          eyedom-url="{% url 'egfdatabase:eyedom' instance.evalueid %}"
+          exhand-url="{% url 'egfdatabase:exhand' instance.evalueid %}"
+          exlop-url="{% url 'egfdatabase:exlop' instance.evalueid %}"
+          exdac-url="{% url 'egfdatabase:exdac' instance.evalueid %}"
+          exdaf-url="{% url 'egfdatabase:exdaf' instance.evalueid %}"
+          exdah-url="{% url 'egfdatabase:exdah' instance.evalueid %}"
+          exdamc-url="{% url 'egfdatabase:exdamc' instance.evalueid %}"
+          excast-url="{% url 'egfdatabase:excast' instance.evalueid %}"
+          exlotp-url="{% url 'egfdatabase:exlotp' instance.evalueid %}"
+          extoeout-url="{% url 'egfdatabase:extoeout' instance.evalueid %}"
+          expitch-url="{% url 'egfdatabase:expitch' instance.evalueid %}"
+          newhand-url="{% url 'egfdatabase:newhand' instance.evalueid %}"
+          newlop-url="{% url 'egfdatabase:newlop' instance.evalueid %}"
+          newdac-url="{% url 'egfdatabase:newdac' instance.evalueid %}"
+          newdaf-url="{% url 'egfdatabase:newdaf' instance.evalueid %}"
+          newdah-url="{% url 'egfdatabase:newdah' instance.evalueid %}"
+          newdamc-url="{% url 'egfdatabase:newdamc' instance.evalueid %}"
+          newcast-url="{% url 'egfdatabase:newcast' instance.evalueid %}"
+          newlotp-url="{% url 'egfdatabase:newlotp' instance.evalueid %}"
+          newtoeout-url="{% url 'egfdatabase:newtoeout' instance.evalueid %}"
+          newpitch-url="{% url 'egfdatabase:newpitch' instance.evalueid %}"
+          cor1-url="{% url 'egfdatabase:cor1' instance.evalueid %}"
+          cor2-url="{% url 'egfdatabase:cor2' instance.evalueid %}"
+          cor3-url="{% url 'egfdatabase:cor3' instance.evalueid %}"
+          cor4-url="{% url 'egfdatabase:cor4' instance.evalueid %}"
+          cor5-url="{% url 'egfdatabase:cor5' instance.evalueid %}"
+          cor6-url="{% url 'egfdatabase:cor6' instance.evalueid %}"
+          cor7-url="{% url 'egfdatabase:cor7' instance.evalueid %}"
+          cor8-url="{% url 'egfdatabase:cor8' instance.evalueid %}"
+          cor9-url="{% url 'egfdatabase:cor9' instance.evalueid %}"
+          cor10-url="{% url 'egfdatabase:cor10' instance.evalueid %}"
+          cor11-url="{% url 'egfdatabase:cor11' instance.evalueid %}"
+          evaluenotes-url="{% url 'egfdatabase:evaluenotes' instance.evalueid %}">
+        <div id="header">
+            <h5 id="formh2">Elite Gun Fitting</h5>
+            {% csrf_token %}
+            {{ form.name_of_field }}
+                <h6 id="phone" >815-955-2074</h6>
+                <h6 id="name" >Alan Braner</h6>
+                <h6 id="website" >www.egf.com</h6>
+                <h6 id="email1" >elitegunfitting@gmail.com</h6>
+        </div>
+        <div id="cust">
+            {% for result in CustomerInfo %}
+                <div id="id" >Cust ID:</div>
+                <div id="custid" >
+                    {{ result.id }}
+                </div>
+               <div id="first" >First Name:</div>
+                <div id="custfirst" >
+                    {{ result.custfirstname }}
+                </div>
+                <div id="last" >Last Name:</div>
+                <div id="custlast" >
+                    {{ result.custlastname }}
+                </div>
+                <div id="add" >Address:</div>
+                <div id="custadd" >
+                    {{ result.custadd1 }}
+                </div>
+                <div  id="city" >City:</div>
+                <div id="custcity" >
+                    {{ result.custcity }}
+                </div>
+                <div  id="state" >State:</div>
+                <div id="custst" >
+                    {{ result.custst }}
+                </div>
+                <div id="cell" >Cell Number:</div>
+                <div id="custcell" >
+                    {{ result.custcell1 }}
+                </div>
+                <div id="email" >Email:</div>
+                <div id="custemail" >
+                    {{ result.custemail1 }}
+                </div>
+            {% endfor %}
+        </div>
+        <div id="gun">
+            {% for result in GunInfo %}
+            <div id="gunidlabel" >Gun ID:</div>
+            <div id="gunid" >
+                {{ result.gunid }}
+            </div>
+            <div id="gunmanlabel" >Manufacturer:</div>
+            <div id="gunman" >
+                {{ result.gunmanufacturer }}
+            </div>
+            <div id="gunmodellabel" >Model:</div>
+            <div id="gunmodel" >
+                {{ result.gunmodel }}
+            </div>
+            <div id="gunseriallabel">Serial Number:</div>
+            <div id="gunserial" >
+                {{ result.gunserialnumber }}
+            </div>
+            <div id="gungaugelabel">Gauge:</div>
+            <div id="gungauge" >
+                {{ result.gungauge }}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="workorder1">
+            {% for result in Evaluation %}
+            <div id="evalueidlabel">Evalue. ID:</div>
+            <div id="evalueid" >
+                {{ result.evalueid }}
+            </div>
+            <div id="workorderdate">
+                {{ form.workorderdate.errors }}
+                <label id="label_workorderdate">Work Order Date:</label>
+                {{ form.workorderdate }}
+            </div>
+            <div id="eyedon">
+                {{ form.eyedominace.errors }}
+                <label id="label_eyedominace">Eye Dominace</label>
+                {{ form.eyedominace }}
+            </div>
+        <div id="exist">
+            <h6 id="exittext" >Existing Dimensions</h6>
+            <div id="exhand">
+                {{ form.exhand.errors }}
+                <label id="label_exhand">Hand</label>
+                {{ form.exhand }}
+            </div>
+            <div id="exlop">
+                {{ form.exlop.errors }}
+                <label id="label_exlop">LOP</label>
+                {{ form.exlop }}
+            </div>
+            <div id="exdac">
+                {{ form.exdac.errors }}
+                <label id="label_exdac">Drop at Comb</label>
+                {{ form.exdac }}
+            </div>
+            <div id="exdaf">
+                {{ form.exdaf.errors }}
+                <label id="label_exdaf">Drop at Face</label>
+                {{ form.exdaf }}
+            </div>
+            <div id="exdah">
+                {{ form.exdah.errors }}
+                <label id="label_exdah">Drop at Heal</label>
+                {{ form.exdah }}
+            </div>
+            <div id="exdamc">
+                {{ form.exdamc.errors }}
+                <label id="label_exdamc">Drop at Monte Carlo</label>
+                {{ form.exdamc }}
+            </div>
+            <div id="excast">
+                {{ form.excast.errors }}
+                <label id="label_excast">Cast</label>
+                {{ form.excast }}
+            </div>
+            <div id="exlotp">
+                {{ form.exlotp.errors }}
+                <label id="label_exlotp">Length of Tripper Pull</label>
+                {{ form.exlotp }}
+            </div>
+            <div id="extoeout">
+                {{ form.extoeout.errors }}
+                <label id="label_extoeout">Toe Out</label>
+                {{ form.extoeout }}
+            </div>
+            <div id="expitch">
+                {{ form.expitch.errors }}
+                <label id="label_expitch">Pitch</label>
+                {{ form.expitch }}
+            </div>
+        </div>
+        <div id="new">
+            <h6 id="newtext" >New Dimensions</h6>
+            <div id="newhand">
+                {{ form.newhand.errors }}
+                <label id="label_newhand">Hand</label>
+                {{ form.newhand }}
+            </div>
+            <div id="newlop">
+                {{ form.newlop.errors }}
+                <label id="label_newlop">LOP</label>
+                {{ form.newlop }}
+            </div>
+            <div id="newdac">
+                {{ form.newdac.errors }}
+                <label id="label_newdac">Drop at Comb</label>
+                {{ form.newdac }}
+            </div>
+            <div id="newdaf">
+                {{ form.newdaf.errors }}
+                <label id="label_newdaf">Drop at Face</label>
+                {{ form.newdaf }}
+            </div>
+            <div id="newdah">
+                {{ form.newdah.errors }}
+                <label id="label_newdah">Drop at Heal</label>
+                {{ form.newdah }}
+            </div>
+            <div id="newdamc">
+                {{ form.newdamc.errors }}
+                <label id="label_newdamc">Drop at Monte Carlo</label>
+                {{ form.newdamc }}
+            </div>
+            <div id="newcast">
+                {{ form.newcast.errors }}
+                <label id="label_newcast">Cast</label>
+                {{ form.newcast }}
+            </div>
+            <div id="newlotp">
+                {{ form.newlotp.errors }}
+                <label id="label_newlotp">Length of Trigger Pull</label>
+                {{ form.newlotp }}
+            </div>
+            <div id="newtoeout">
+                {{ form.newtoeout.errors }}
+                <label id="label_newtoeout">Toe Out</label>
+                {{ form.newtoeout }}
+            </div>
+            <div id="newpitch">
+                {{ form.newpitch.errors }}
+                <label id="label_newpitch">Pitch</label>
+                {{ form.newpitch }}
+            </div>
+        </div>
+        <div id="select">
+            <div id="cor1">
+                {{ form.cor1.errors }}
+                {{ form.cor1 }}
+            </div>
+            <div id="cor2">
+                {{ form.cor2.errors }}
+                {{ form.cor2 }}
+            </div>
+            <div id="cor3">
+                {{ form.cor3.errors }}
+                {{ form.cor3 }}
+            </div>
+            <div id="cor4">
+                {{ form.cor4.errors }}
+                {{ form.cor4 }}
+            </div>
+            <div id="cor5">
+                {{ form.cor5.errors }}
+                {{ form.cor5 }}
+            </div>
+            <div id="cor6">
+                {{ form.cor6.errors }}
+                {{ form.cor6 }}
+            </div>
+            <div id="cor7">
+                {{ form.cor7.errors }}
+                {{ form.cor7 }}
+            </div>
+            <div id="cor8">
+                {{ form.cor8.errors }}
+                {{ form.cor8 }}
+            </div>
+            <div id="cor9">
+                {{ form.cor9.errors }}
+                {{ form.cor9 }}
+            </div>
+            <div id="cor10">
+                {{ form.cor10.errors }}
+                <label id="label_cor10"></label>
+                {{ form.cor10 }}
+            </div>
+            <div id="cor11">
+                {{ form.cor11.errors }}
+                <label id="label_cor11"></label>
+                {{ form.cor11 }}
+            </div>
+            <div id="notes">
+                {{ form.notes.errors }}
+                <label id="label_notes">Notes</label>
+                {{ form.notes }}
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+            <div class="fieldWrapper" id="col2">
+            </div>
+    </form>
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+////////////////// Work Order Date //////////////////////////////////////
+function WorkOrderDateFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_workorderdate');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("workorderdate-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_workorderdate: $('#id_workorderdate').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 0);
+}
+
+
+
+////////////////// Eye Dominace //////////////////////////////////////
+$(function(){
+    $('#id_eyedominace').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_eyedominace');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("eyedom-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_eyedominace: $('#id_eyedominace').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex Hand //////////////////////////////////////
+$(function(){
+    $('#id_exhand').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exhand');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exhand-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exhand: $('#id_exhand').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex LOP //////////////////////////////////////
+$(function(){
+    $('#id_exlop').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exlop');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exlop-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exlop: $('#id_exlop').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex dac //////////////////////////////////////
+$(function(){
+    $('#id_exdac').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exdac');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exdac-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exdac: $('#id_exdac').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex daf //////////////////////////////////////
+$(function(){
+    $('#id_exdaf').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exdaf');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exdaf-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exdaf: $('#id_exdaf').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex dah //////////////////////////////////////
+$(function(){
+    $('#id_exdah').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exdah');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exdah-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exdah: $('#id_exdah').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex damc //////////////////////////////////////
+$(function(){
+    $('#id_exdamc').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exdamc');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exdamc-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exdamc: $('#id_exdamc').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex cast //////////////////////////////////////
+$(function(){
+    $('#id_excast').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_excast');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("excast-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_excast: $('#id_excast').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex lotp //////////////////////////////////////
+$(function(){
+    $('#id_exlotp').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_exlotp');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("exlotp-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_exlotp: $('#id_exlotp').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex toeout //////////////////////////////////////
+$(function(){
+    $('#id_extoeout').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_extoeout');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("extoeout-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_extoeout: $('#id_extoeout').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// Ex pitch //////////////////////////////////////
+
+function ExPitchFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_expitch');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("expitch-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_expitch: $('#id_expitch').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+////////////////// new Hand //////////////////////////////////////
+$(function(){
+    $('#id_newhand').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newhand');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newhand-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newhand: $('#id_newhand').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new LOP //////////////////////////////////////
+$(function(){
+    $('#id_newlop').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newlop');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newlop-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newlop: $('#id_newlop').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new dac //////////////////////////////////////
+$(function(){
+    $('#id_newdac').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newdac');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newdac-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newdac: $('#id_newdac').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new daf //////////////////////////////////////
+$(function(){
+    $('#id_newdaf').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newdaf');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newdaf-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newdaf: $('#id_newdaf').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new dah //////////////////////////////////////
+$(function(){
+    $('#id_newdah').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newdah');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newdah-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newdah: $('#id_newdah').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new damc //////////////////////////////////////
+$(function(){
+    $('#id_newdamc').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newdamc');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newdamc-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newdamc: $('#id_newdamc').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new cast //////////////////////////////////////
+$(function(){
+    $('#id_newcast').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newcast');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newcast-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newcast: $('#id_newcast').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new lotp //////////////////////////////////////
+$(function(){
+    $('#id_newlotp').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newlotp');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newlotp-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newlotp: $('#id_newlotp').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new toeout //////////////////////////////////////
+$(function(){
+    $('#id_newtoeout').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_newtoeout');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("newtoeout-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newtoeout: $('#id_newtoeout').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// new pitch //////////////////////////////////////
+
+function NewPitchFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_newpitch');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("newpitch-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_newpitch: $('#id_newpitch').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+////////////////// cor1 //////////////////////////////////////
+$(function(){
+    $('#id_cor1').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor1');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor1-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor1: $('#id_cor1').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor2 //////////////////////////////////////
+$(function(){
+    $('#id_cor2').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor2');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor2-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor2: $('#id_cor2').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor3 //////////////////////////////////////
+$(function(){
+    $('#id_cor3').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor3');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor3-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor3: $('#id_cor3').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor4 //////////////////////////////////////
+$(function(){
+    $('#id_cor4').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor4');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor4-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor4: $('#id_cor4').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor5 //////////////////////////////////////
+$(function(){
+    $('#id_cor5').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor5');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor5-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor5: $('#id_cor5').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor6 //////////////////////////////////////
+$(function(){
+    $('#id_cor6').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor6');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor6-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor6: $('#id_cor6').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor7 //////////////////////////////////////
+$(function(){
+    $('#id_cor7').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor7');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor7-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor7: $('#id_cor7').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor8 //////////////////////////////////////
+$(function(){
+    $('#id_cor8').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor8');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor8-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor8: $('#id_cor8').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor9 //////////////////////////////////////
+$(function(){
+    $('#id_cor9').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor9');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor9-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor9: $('#id_cor9').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor10 //////////////////////////////////////
+$(function(){
+    $('#id_cor10').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor10');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor10-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor10: $('#id_cor10').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// cor11 //////////////////////////////////////
+$(function(){
+    $('#id_cor11').change(function(){
+        setTimeout(function(){
+                var selectBox =document.getElementById('id_cor11');
+                var userInput =selectBox.options[selectBox.selectedIndex].value;
+                console.log(userInput);
+                var url = $("#form2").attr("cor11-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_cor11: $('#id_cor11').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+        }, 100);
+    });
+});
+
+////////////////// notes //////////////////////////////////////
+
+function EvalueNotesFunction() {
+    setTimeout(function(){
+        var selectBox =document.getElementById('id_notes');
+        var userInput =selectBox.value;
+            console.log(userInput);
+            var url = $("#form2").attr("evaluenotes-url");
+                    $.ajax({
+                        type:'POST',
+                       url: url,
+                       data:{
+                            id_notes: $('#id_notes').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}'
+                         },
+                    });
+    }, 500);
+}
+
+</script>
+{% endblock %}
