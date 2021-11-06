@@ -1,0 +1,1171 @@
+/* Global */
+body{
+  font: 16px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#35424a;
+
+}
+
+a#back{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 142px;
+    margin-right: 408px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#back{
+    color: #000000;
+}
+
+a#back:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+
+a#pdf{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 77px;
+    margin-right: -121px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#pdf{
+    color: #000000;
+}
+
+a#pdf:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+
+a#emailpdf{
+    border: 2px solid #e8491d;
+    border-radius: 2px;
+    background: #C0C0C0;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "calibri";
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 14px;
+    margin-right: -119px;
+    transition: 0.6s;
+   text-align: center;
+    overflow: hidden;
+    padding:3px 5px;
+
+
+}
+a#emailpdf{
+    color: #000000;
+}
+
+a#emailpdf:hover{
+    color: #35424a;
+    background: #ffc107;
+}
+
+
+center#page{
+    width:782px;
+    height:1012px;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+}
+
+
+#form2{
+    width:690px;
+    height:920px;
+    border-style: solid;
+    border-width:3px;
+    border-color: black;
+    margin-top:11px;
+}
+
+#formh2{
+    width:257px;
+    height:32px;
+    margin-top:4px;
+    font-family: Century;
+    font-style: italic;
+    font-weight: bold;
+    font-size:30px;
+}
+
+#header{
+    height:100px;
+    border-bottom-style: solid;
+    border-width:3px;
+    border-color: black;
+}
+
+#pro{
+    margin-top:15px;
+    color:#e8491d;
+    font-weight:bold;
+    font-size: 30px;
+}
+
+#workorder{
+    width:157px;
+    height:32px;
+    margin-left:-560px;
+    margin-top:-41px;
+}
+
+#label_workorder{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:100px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+input#id_workorder{
+    width:49px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+
+#workorderdate{
+    width:193px;
+    height:32px;
+    margin-left:485px;
+    margin-top:-32px;
+}
+
+#label_workorderdate{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:110px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+input#id_workorderdate{
+    width:75px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+
+#phone{
+    width:75px;
+    margin-left:-464px;
+    margin-top:25px;
+    text-align:center;
+    font-size: 12px;
+}
+
+
+#website{
+    width:75px;
+    margin-left:-1067px;
+    margin-top:-10px;
+    text-align:center;
+    font-size: 12px;
+}
+
+
+#name{
+    width:75px;
+    margin-left:-465px;
+    margin-top:-7px;
+    text-align:center;
+    font-size: 12px;
+}
+
+
+#email1{
+    width:75px;
+    margin-left:-30px;
+    margin-top:-22px;
+    text-align:center;
+    font-size: 12px;
+}
+
+
+div#cust{
+    width:685px;
+    height:93px;
+    text-align:center;
+    font-size: 12px;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+}
+
+
+#id{
+    width:60px;
+    margin-left:27px;
+    margin-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#custid{
+    width:60px;
+    margin-left:80px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+}
+
+div#first{
+    width:80px;
+    margin-left:3px;
+    margin-top:0px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custfirst{
+    width:125px;
+    margin-left:87px;
+    margin-top:-20px;
+    text-align:left;
+    font-size: 14px;
+
+}
+
+
+div#last{
+    width:80px;
+    margin-left:3px;
+    margin-top:0px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custlast{
+    width:125px;
+    margin-left:87px;
+    margin-top:-20px;
+    text-align:left;
+    font-size: 14px;
+
+}
+
+div#add{
+    width:80px;
+    margin-left:3px;
+    margin-top:0px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custadd{
+    width:170px;
+    margin-left:86px;
+    margin-top:-20px;
+    text-align:left;
+    font-size: 14px;
+}
+
+div#city{
+    width:80px;
+    margin-left:281px;
+    margin-top:-65px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcity{
+    width:200px;
+    margin-left:370px;
+    margin-top:-20px;
+    text-align:left;
+    font-size: 14px;
+}
+
+div#state{
+    width:191px;
+    margin-left:170px;
+    margin-top:0px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custst{
+    width:25px;
+    margin-left:370px;
+    margin-top:-20px;
+    text-align:left;
+    font-size: 14px;
+}
+
+div#cell{
+    width:95px;
+    margin-left:266px;
+    margin-top:0px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custcell{
+    width:107px;
+    margin-left:370px;
+    margin-top:-21px;
+    text-align:left;
+    font-size: 14px;
+}
+
+div#email{
+    width:95px;
+    margin-left:417px;
+    margin-top:-66px;
+    text-align:right;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+div#custemail{
+    width:165px;
+    margin-left:516px;
+    margin-top:-21px;
+    text-align:left;
+    font-size: 14px;
+}
+
+
+
+
+#email{
+    width:75px;
+    margin-left:-30px;
+    margin-top:-22px;
+}
+
+
+#gun{
+    height:28px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+#gunidlabel{
+    width:60px;
+    margin-left:-617px;
+    margin-top:0px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunid{
+    width:38px;
+    margin-left:-528px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunmanlabel{
+    width:103px;
+    margin-left:-378px;
+    margin-top:-20px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunman{
+    width:80px;
+    margin-left:-196px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunmodellabel{
+    width:60px;
+    margin-left:-63px;
+    margin-top:-20px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunmodel{
+    width:135px;
+    margin-left:120px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#gunseriallabel{
+    width:60px;
+    margin-left:280px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gunserial{
+    width:95px;
+    margin-left:439px;
+    margin-top:-21px;
+    text-align:left;
+    font-size: 14px;
+}
+
+#gungaugelabel{
+    width:60px;
+    margin-left:568px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#gungauge{
+    width:60px;
+    margin-left:635px;
+    margin-top:-21px;
+    text-align:center;
+    font-size: 14px;
+}
+
+#col1.fieldWrapper{
+    height:72px;
+    width:570px;
+    margin-left:0px;
+    margin-top:-12px;
+}
+
+div#workorder1{
+    height:365px;
+    width:567px;
+    text-align:center;
+    font-size: 12px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#matdescript{
+    width:363px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    font-size: 14px;
+    font-weight:bold;
+    background-color: #C0C0C0;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#matlabor{
+    width:100px;
+    height:24px;
+    margin-left:363px;
+    margin-top:-24px;
+    font-size: 14px;
+    font-weight:bold;
+    background-color: #C0C0C0;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#matretail{
+    width:100px;
+    height:24px;
+    margin-left:463px;
+    margin-top:-24px;
+    font-size: 14px;
+    font-weight:bold;
+    background-color: #C0C0C0;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+div#matcol{
+    height:24px;
+}
+
+#descriptwo{
+    width:363px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#laborwo{
+    width:100px;
+    height:24px;
+    margin-left:363px;
+    margin-top:-24px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#retailwo{
+    width:100px;
+    height:24px;
+    margin-left:463px;
+    margin-top:-24px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#laborlabel{
+    font-size: 12px;
+    width:80px;
+    margin-left:350px;
+    margin-top:20px;
+}
+
+#labor{
+    width:65px;
+    margin-left:460px;
+    margin-top:-26px;
+    font-size: 12px;
+    text-align:right;
+}
+
+#matlabel{
+    font-size: 12px;
+    width:80px;
+    margin-left:330px;
+    margin-top:0px;
+}
+
+#retail{
+    width:65px;
+    margin-left:460px;
+    margin-top:-26px;
+    font-size: 12px;
+    text-align:right;
+}
+
+#taxlabel{
+    font-size: 12px;
+    width:80px;
+    margin-left:325px;
+    margin-top:0px;
+}
+
+#tax{
+    width:65px;
+    margin-left:460px;
+    margin-top:-26px;
+    font-size: 12px;
+    text-align:right;
+}
+
+#totalmatlabel{
+    font-size: 12px;
+    width:92px;
+    margin-left:302px;
+    margin-top:0px;
+}
+
+#totalmat{
+    width:65px;
+    margin-left:460px;
+    margin-top:-26px;
+    font-size: 12px;
+    text-align:right;
+}
+
+#totallaborlabel{
+    font-size: 12px;
+    width:100px;
+    margin-left:300px;
+    margin-top:0px;
+}
+
+#totaljobcost{
+    width:65px;
+    margin-left:460px;
+    margin-top:-26px;
+    font-size: 12px;
+    text-align:right;
+}
+
+#col2.fieldWrapper{
+    height:180px;
+    width:570px;
+    margin-left:0px;
+    margin-top:32px;
+    font-size: 12px;
+}
+
+#shipping{
+    width:141px;
+    height:28px;
+    margin-left:396px;
+    margin-top:-33px;
+}
+
+#label_shipping{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:60px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:5px;
+}
+
+input#id_shipping{
+    width:70px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    text-align: right;
+    border-radius:0px;
+}
+
+#jobcostshipping{
+    width:65px;
+    margin-left:460px;
+    margin-top:-17px;
+    font-size: 12px;
+    text-align:right;
+}
+
+div#label_jobcostshipping{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:190px;
+    margin-left:238px;
+    margin-right:0px;
+    margin-top:0px;
+    padding-top:0px;
+    display: inline-block;
+}
+
+div#id_jobcostshipping{
+    width:536px;
+    height:24px;
+    margin-left:254px;
+    margin-top:-19px;
+    padding-top:2px;
+}
+
+
+div#jobcostshipping1{
+    width:80px;
+    height:24px;
+    margin-left:127px;
+    margin-top:-19px;
+}
+input#jobcostshipping1{
+    width:70px;
+    margin-left:-13px;
+    margin-top:2px;
+    border: solid;
+    border-width: 1px;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    text-align: right;
+    padding-top:0px;
+    background-color:#D3D3D3;
+}
+
+#id_jobcostshipping1{
+    width:80px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+}
+#input1{
+    width:80px;
+    height:24px;
+    margin-left:0px;
+    margin-top:0px;
+
+}
+
+input#id_jobcostshipping{
+    width:70px;
+    height:24px;
+    margin-left:382px;
+    margin-top:1px;
+    text-align: right;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color:#D3D3D3;
+}
+
+#downpay{
+    width:318px;
+    margin-left:216px;
+}
+
+#label_downpay{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:85px;
+    margin-left:152px;
+    margin-right:0px;
+    margin-top:5px;
+}
+
+input#id_downpay{
+    width:70px;
+    text-align:right;
+    margin-left:2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+#balance{
+    width:60px;
+    height:28px;
+    margin-left:471px;
+    margin-top:-21px;
+    padding-top:4px;
+}
+
+
+#id_balance{
+    width:70px;
+    height:28px;
+    margin-left:456px;
+    margin-top:-18px;
+    text-align: right;
+}
+
+
+#label_balance{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:50px;
+    margin-left:329px;
+    margin-right:0px;
+    margin-top:5px;
+}
+
+input#id_balance{
+    height: 25px;
+    width:70px;
+    text-align:right;
+    margin-left:73px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+}
+
+
+input#balance1{
+    height: 25px;
+    width:70px;
+    text-align:right;
+    margin-left:1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    background-color:#D3D3D3;
+}
+
+#input2{
+    width:80px;
+    height:24px;
+    margin-left:63px;
+    margin-top:-20px;
+
+}
+
+
+#finalpay{
+    width:319px;
+    height:28px;
+    margin-left:219px;
+}
+
+#label_finalpay{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:190px;
+    margin-left:47px;
+    margin-right:0px;
+    margin-top:5px;
+}
+
+input#id_finalpay{
+    width:70px;
+    text-align:right;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+#downpaydate{
+    width:240px;
+    height:28px;
+    margin-left:-382px;
+    margin-top:-86px;
+}
+
+#label_downpaydate{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:114px;
+    margin-left:18px;
+    margin-right:0px;
+    margin-top:5px;
+}
+
+input#id_downpaydate{
+    width:102px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+#finalpaydate{
+    width:262px;
+    height:28px;
+    margin-left:-403px;
+    margin-top:5px;
+}
+
+#label_finalpaydate{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:108px;
+    margin-left:47px;
+    margin-right:0px;
+    margin-top:28px;
+}
+
+input#id_finalpaydate{
+    width:102px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+}
+
+#checknum1{
+    width:169px;
+    height:28px;
+    margin-left:35px;
+    margin-top:-54px;
+}
+
+#label_checknum1{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:96px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+input#id_checknum1{
+    width:70px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+#checknum2{
+    width:173px;
+    height:28px;
+    margin-left:35px;
+    margin-top:25px;
+}
+
+
+#label_checknum2{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:96px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+input#id_checknum2{
+    width:70px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+    border-radius:0px;
+}
+
+
+#notes{
+    width:527px;
+    height:91px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+#label_note{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:96px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+#id_notes{
+    width:532px;
+    height:75px;
+    border-radius:0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:375px){
+
+}
+
+@media screen and (max-width:566px) and (min-width:376px){
+
+}
+
+@media screen and (max-width:680px) and (min-width:567px){
+
+}
+
+@media screen and (max-width:810px) and (min-width:681px){
+
+}
+
+@media screen and (max-width:1080px) and (min-width:811px){
+
+
+}
+
+@media screen and (max-width:1366px) and (min-width:1081px){
+a#back{
+    float: right;
+    margin-top: 142px;
+    margin-right: 100px;
+}
+
+
+a#pdf{
+    float: right;
+    margin-top: 77px;
+    margin-right: -121px;
+}
+
+a#emailpdf{
+    float: right;
+    margin-top: 14px;
+    margin-right: -119px;
+}
+
+#jobcostshipping{
+    width:260px;
+    height:24px;
+    margin-left:321px;
+    margin-top:2px;
+}
+
+
+#balance{
+    width:319px;
+    height:28px;
+    margin-left:239px;
+    margin-top:-1px;
+}
+
+#downpaydate{
+    width:240px;
+    height:28px;
+    margin-left:-406px;
+    margin-top:-86px;
+}
+
+input#id_downpaydate{
+    height:28px;
+    width:102px;
+    margin-left:0px;
+}
+
+
+#checknum1{
+    width:183px;
+    height:28px;
+    margin-left:35px;
+    margin-top:-56px;
+}
+
+#label_checknum1{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    width:96px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+}
+
+input#id_checknum1{
+    width:70px;
+    text-align:center;
+    margin-left:0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    -moz-appearance: textfield;
+    font-size: 12px;
+}
+
+#finalpaydate{
+    width:262px;
+    height:28px;
+    margin-left:-428px;
+    margin-top:5px;
+}
+
+input#id_finalpaydate{
+    height:28px;
+    width:102px;
+    margin-left:0px;
+
+}
+#finalpay{
+    width:319px;
+    height:28px;
+    margin-left:219px;
+    margin-top:1px;
+}
+
+#label_finalpaydate{
+    margin-top:25px;
+}
+
+#label_checknum2{
+    margin-top:3px;
+}
+
+#notes{
+    margin-top:5px;
+}
+
+}
