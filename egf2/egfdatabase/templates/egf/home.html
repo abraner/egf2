@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../../static/login/home2.css">
+    {% block head %}
+    <title>Database Page</title>
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Elite Gun Fitting Program</span></h1>
+            </div>
+            <nav>
+                <div id="menu">
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Settings
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/admin">Security</a></li>
+                        </div>
+                    </div>
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Customer Info.
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="/egfdatabase/cust_info_new">Add New Customer</a>
+                            </li>
+                            <li><a href="/egfdatabase/cust_info_existing">Search Existing Cust.</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="dropdown1">
+                        <button class="dropbtn1">Material Info.
+                            <span class="caret"></span></button>
+                        <div class="dropdown1-content">
+                            <li><a href="#">Material<span class="caret"></span></a>
+                                 <ul class="submenu2">
+                                    <il><a href="/egfdatabase/materialnew">Add New Material</a></il>
+                                    <il><a href="/egfdatabase/mat_info_existing">Search for Material</a></il>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <a href="/egfdatabase/index">
+                        <button type="button" class="btn btn1">Log Out</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+</script>
+
+    {% block body %}
+    {% endblock %}
+
+</body>
+</html>
