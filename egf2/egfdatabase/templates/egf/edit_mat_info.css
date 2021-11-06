@@ -1,0 +1,72 @@
+{% extends 'home.html' %}
+<h1>HVAC Bidding Program</h1>
+{% block head %}
+<title>HVAC Bidding|Search Cust. Info.</title>
+{% endblock %}
+
+{% block body %}
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../../static/login/mat_existing2.css">
+<section id="workarea1">
+    <section id="section1">
+        <h1 id="formh1">Material Search</h1>
+        <div id="menu2">
+            <div id="header1">
+                <div id="A">ID</div>
+                <div id="C">Description</div>
+                <div id="D">Labor</div>
+                <div id="E">Wholesale Cost</div>
+                <div id="G">Retail Cost</div>
+            </div>
+            <section id="sec1"></section>
+            <section id="sec2"></section>
+            <section id="sec3"></section>
+            <section id="sec4"></section>
+            <section id="sec5"></section>
+            <section id="sec6"></section>
+            <section id="sec7"></section>
+            <section id="sec8"></section>
+            <section id="sec9"></section>
+            <section id="sec10"></section>
+            <section id="sec11"></section>
+            <section id="sec12"></section>
+            <section id="sec13"></section>
+        </div>
+        <form id="form1" method="post">
+            <section id="sectionA" >
+                {% for obj in object_list %}
+                <a id="id" href="{{ obj.get_absolute9_url }}">{{ obj.id }}</a>
+                <div id="description">{{ obj.description }}</div>
+                <div id="labor">{{ obj.labor }}</div>
+                <div id="wholesale">{{ obj.wholesalecost }}</div>
+                <div id="retail">{{ obj.retailcost }}</div>
+                {% endfor %}
+                </section>
+            <div id="pag" class="pagination">
+                <span class="step-links">
+                    {% if object_list.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ object_list.previous_page_number }}">previous</a>
+                    {% endif %}
+                    <span class="object_list">
+                        Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+                    </span>
+                    {% if object_list.has_next %}
+                    <a href="?page={{ object_list.next_page_number }}">next</a>
+                    <a href="?page={{ object_list.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+        </form>
+        <form id="searchbar" class="form-inline my-2 my-lg-0">
+            <input name="search"
+                   id="search"
+                   class="form-control mr-sm-2"
+                   type="search"
+                   placeholder="Search Material"
+                   aria-label="Search">
+            <button id="searchbutton" class="btn-success" type="submit">Search</button>
+        </form>
+    </section>
+</section>
+{% endblock %}
