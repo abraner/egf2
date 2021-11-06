@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+<h1>EGF Bidding Program</h1>
+{% block head %}
+<title>EGF | Edit Cust. Info</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="../../../static/login/custinfo.css">
+        <section id="workarea1">
+            <section id="section2">
+  <!--  <container id="con1"> -->
+                <form id="form2" method="post">
+                    <h1 id="formh2">Edit Customer Information</h1>
+                    <br>
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <br>
+                <button id="btn1" type="submit" class="btn-success">Update Customer Information</button>
+                </form>
+            </section>
+        </section>
+{% endblock %}
