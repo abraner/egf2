@@ -18,9 +18,19 @@ from django.urls import include, path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
+from egfdatabase.sitemaps import StaticViewsSitemap
+from django.contrib.sitemaps.views import sitemap
+
+
+sitemaps = {
+    'sitemap' : StaticViewsSitemap
+    }
+
 
 urlpatterns = [
     path('', views.login_redirect, name='login_redirect'),
     path('admin/', admin.site.urls),
-    path('egfdatabase/', include('egfdatabase.urls'))
+    path('egfdatabase/', include('egfdatabase.urls')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
+     name='django.contrib.sitemaps.views.sitemap')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
