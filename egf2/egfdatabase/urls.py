@@ -1,4 +1,4 @@
-from django.urls import path
+rom django.urls import path
 from . import views
 from django.contrib.auth.views import LoginView
 
@@ -172,5 +172,3 @@ urlpatterns = [
     path('<int:gunid>/evaluepdf/', views.evaluepdf, name='evaluepdf'),
     path('<int:gunid>/generate_view2/', views.generate_view2, name='generate_view2'),
     path('<int:gunid>/pdf_download2/', views.DownloadPDF2.as_view(), name='pdf_download2'),
-
-]
