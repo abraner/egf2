@@ -1,10 +1,7 @@
 from django.contrib import admin
 
 
-from .models import DuplicatingType, FittingTime, FittingStock, StockRefinishing, StockMod1, StockMod2,  StockMod3,StockRepairTime, StockRepairType, Checkering, Wood,\
-    ProposalType, FinishType, RecoilPad, RecoilPadInfo, Materials, Labor, TaxRate, EyeType, HandType, LopType, DacType, Cor1Type, Cor2Type, Cor3Type, Cor4Type, Cor5Type,\
-    Cor6Type, Cor7Type, Cor8Type, Cor9Type, Cor10Type, Cor11Type, DafType, DahType, DamcType, CastType, LotpType, ToeoutType, NewLopType, NewDacType, NewDafType, NewDahType,\
-    NewDamcType, NewCastType, NewLotpType, NewToeoutType, NewHandType
+from .models import DuplicatingType, FittingTime, FittingStock, StockRefinishing, StockRepairTime, StockRepairType, Wood, ProposalType, FinishType, Materials, Labor, TaxRate, EyeType, HandType, RecoilPad
 
 # Register your models here.
 admin.site.site_header = 'EGF Bidding Dashboard'
